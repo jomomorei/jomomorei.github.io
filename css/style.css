@@ -46,13 +46,13 @@ body a{
 	position: relative;
 }
 .header-home{
-	 background:#f1cd69;
+	 background:#f7d16b;
 	z-index: 999;
 }
 .logo{
 	float: left;
 	display: inline-block;
-	background:#312934;
+	background:#302836;
     margin-bottom: 0;
 	padding: 0.5em 3em 1.7em;
 }
@@ -103,7 +103,7 @@ span.main {
 }
 .top-nav ul li.active a, .top-nav ul li a:hover{
 	color:#fff;
-	background:#312934;
+	background:#302836;
 }
 .border-side{
 	position: absolute;
@@ -185,7 +185,7 @@ span.main {
 }
 .top-nav ul li.active,.top-nav ul li:hover{
 	color:rgb(230, 32, 32);
-	background:#312934;
+	background:#302836;
 }
 .top-nav ul li a{
 	color:#fff;
@@ -236,7 +236,7 @@ span.main {
 .hexagon, .bg_DarckGrayColor .hexagon {
   width: 200px;
   height: 100px;
-  background:#312934;
+  background:#302836;
   position: relative;
   overflow: visible;
   box-sizing: border-box;
@@ -250,7 +250,7 @@ span.main {
   height: 0;
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
-  border-bottom: 60px solid #312934;
+  border-bottom: 60px solid #302836;
 }
 .hexagon .icon, .bg_DarckGrayColor .hexagon .icon {
   float: none;
@@ -302,7 +302,7 @@ span.main {
 	margin-bottom: 1em;
 }
 .box_6:hover .desc{
-	background:#312934;
+	background:#302836;
 }
 .box_6:hover .desc .mail{
 	color:rgb(235, 23, 23);
@@ -366,7 +366,7 @@ span.main {
 	height: 104px;
 }
 .img-wrapper a:hover img {
-	border-color:#312934;
+	border-color:#302836;
 }
 .img-wrapper a + a {
 	margin-left: 14px;
@@ -431,13 +431,13 @@ p.m_2 a{
 	font-weight:300;
 }
 p.m_2 a:hover{
-	color:#312934;
+	color:#302836;
 	text-decoration:none;
 }
 
 /*--footer--*/
 .footer{
-	background:#312934;
+	background:#302836;
 	padding:4em 0;
 }
 ul.list1{
@@ -728,7 +728,7 @@ p.service_desc{
 	text-decoration: underline;
 }
 i.blog-icon{
-	color:#312934;
+	color:#302836;
 	margin-right: 10px;
 }
 /* Button 3d */
@@ -755,7 +755,7 @@ i.blog-icon{
 	-ms-transform: rotateY(15deg);
 	transform: rotateY(15deg);
 	text-decoration:none;
-	background:#312934;
+	background:#302836;
 	color:#fff;
 }
 .btn1:after {
@@ -797,8 +797,8 @@ h1.blog_head{
 	margin-right: 8px;
 }
 .pagination ul li span.pagenav, .pagination ul li .span.border {
-	border-color:#312934;
-	background:#312934;
+	border-color:#302836;
+	background:#302836;
 	color:#fff;
 	text-shadow: none;
 }
@@ -1038,7 +1038,7 @@ label.btn1.btn2.btn-8.btn-8c {
   top: -70px;
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
-  border-bottom: 70px solid #312934;
+  border-bottom: 70px solid #302836;
 }
 .hexagon, .bg_DarckGrayColor .hexagon {
   width: 200px;
@@ -1077,7 +1077,7 @@ figure.icon img {
   top: -60px;
   border-left: 85px solid transparent;
   border-right: 95px solid transparent;
-  border-bottom: 60px solid #312934;
+  border-bottom: 60px solid #302836;
 }
 
 .grid_1, .students, .footer, .grid_3, .advantages, .grid_4 {
@@ -1289,7 +1289,7 @@ figure.icon img {
   top: -60px;
   border-left: 80px solid transparent;
   border-right: 80px solid transparent;
-  border-bottom: 60px solid #312934;
+  border-bottom: 60px solid #302836;
 }
 
 }
@@ -1314,6 +1314,7 @@ address {
 .about-grids {
   text-align: center;
 }
+
 .footer{
   padding:3em 0 0 0;
 }
@@ -1321,7 +1322,7 @@ address {
   min-height: 340px;
 }
 .service_box {
-  margin-bottom: 0;
+  margin-bottom: 3em;
 }
 .grid_4{
 	padding:3em 0 3em 0;
@@ -1400,7 +1401,7 @@ figure.icon img {
   top: -48px;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
-  border-bottom: 48px solid #312934;
+  border-bottom: 48px solid #302836;
 }
 
 .btn.btn-primary, .btn.btn-normal {
@@ -1460,7 +1461,7 @@ figure.icon img {
   top: -40px;
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
-  border-bottom: 40px solid #312934;
+  border-bottom: 40px solid #302836;
 }
 
 .btn.btn-primary, .btn.btn-normal {
@@ -1534,7 +1535,7 @@ h1.blog_head {
 	width: 420px;
 }
 .service_box{
-	margin-bottom:0;
+	margin-bottom:3em;
 }
 .btn1 {
 	width: 37%;
@@ -1591,7 +1592,7 @@ span.secondary {
   top: -30px;
   border-left: 44px solid transparent;
   border-right: 41px solid transparent;
-  border-bottom: 30px solid #312934;
+  border-bottom: 30px solid #302836;
 }
 
 figure.icon img {
