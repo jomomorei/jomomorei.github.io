@@ -14,69 +14,64 @@
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<style>
 		h3.title {
-			color: #F2AE11;
-			font-size: 1.3em;
-			margin-bottom: 3em;
-			text-align: center;
-			font-weight: 500;
+			margin-bottom: 1em;
+			text-align: left;
 			line-height: 2;
 		}
 
 		h3.title span.title-main {
 			display: block;
-			font-size: 1.0em;
-			color: #212121;
+			font-size: 1.2em;
+			color: #4e4d4d;
 			position: relative;
 		}
 
 		h3.title span.title-triangle {
 			display: block;
-			font-size: 1.1em;
-			text-align: center;
-			font-weight: 500;
-			color: #F2AE11;
+			font-size: 0.5em;
+			color: rgb(44, 40, 29);
 		}
 
-		h3.title span.title-main:before,
 		h3.title span.title-main:after {
 			content: '';
 			position: absolute;
 			top: 52%;
-			background: #bdbcbc;
-			width: 30%;
+			background: rgba(173, 173, 173, 0.3);
+			width: 75%;
 			height: 1px;
 		}
 
-		h3.title span.title-main:before {
-			left: 3%;
-		}
-
 		h3.title span.title-main:after {
-			right: 3%;
+			left: 20%;
 		}
 
-		.part1 {
-			background: rgb(248, 237, 248)
-		}
-
-		.part2 {
-			background: rgb(219, 224, 226)
-		}
-
+		.part1,
 		.part3 {
-			background: rgb(248, 237, 248)
+			background: #fdda7a
 		}
 
+		.part2,
 		.part4 {
-			background: rgb(237, 241, 243)
+			background: rgb(243, 243, 237);
 		}
 
 		.length-60 {
-			margin: 0 auto;
-			width: 60%;
+			float: left;
+
 		}
-		.title-triangle{
-			cursor:pointer
+
+		h3 span.title-triangle:hover {
+			color: rgb(101, 134, 161, 0.7);
+			cursor: pointer;
+		}
+
+		.grid_eqt {
+			padding: 3em 0;
+		}
+
+		.img-alone {
+			max-width: 300px;
+			height: 300px;
 		}
 	</style>
 </head>
@@ -114,91 +109,103 @@
 	<!--script-->
 	<script>
 		$(document).ready(function () {
+			$(".bt-down").hide();
 			$(".top-nav li a").click(function () {
 				$(this).parent().addClass("active");
 				$(this).parent().siblings().removeClass("active");
 			});
-            $(".bt-up").click(function () {
-				$(".hide-item").hide();
+			$(".bt-up").click(function () {
+				$(this).parent().parent().parent().parent().next().hide();
+				$(this).parent().next().hide();
 				$(this).hide();
-				 $(".bt-down").show();
+				$(this).prev().show();
 			});
 			$(".bt-down").click(function () {
-				$(".hide-item").show();
+				$(this).parent().parent().parent().parent().next().show();
+				$(this).parent().next().show();
 				$(this).hide();
-				$(".bt-up").show();
+				$(this).next().show();
 			});
 		});
 	</script>
 
 	<!-- /script-for sticky-nav -->
 	<!--//header-->
-	<div class="grid_1">
-		<div class="container">
 
-			<div class="box_1">
-				<h3>構内案内</h3>
-			</div>
+	<div class="grid_eqt part2">
+		<div class="container">
 			<div class="about-grids service_box">
-				<div class="col-md-9">
+
+				<div class="col-sm-12">
+					<div class="about-grids service_box">
+						<h3 class="title"><span class="title-main">構内俯瞰図</span><span
+								class="title-triangle bt-down">▼</span><span class="title-triangle bt-up">▲</span></h3>
+								<div class="list list-center">
+										<ul>
+											<li><img src="img/mark2-green.png"/ class="svg">&nbsp&nbsp&nbsp上屋倉庫</li>
+											<li><img src="img/mark2-red.png"/ class="svg">&nbsp&nbsp&nbsp上屋倉庫（防湿倉庫）</li>
+											<li><img src="img/mark2-orange.png"/ class="svg">&nbsp&nbsp&nbsp船舶荷役設備</li>
+										</ul>
+									</div>
+					</div>
+				</div>
+			</div>
+			<div class="hide-item">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10 about-grid">
 					<div class="mask"><img src="images/satellite-map_2p3.png" alt="image" class="img-responsive"
 							alt="" />
 					</div>
 				</div>
-				<div class="col-md-3">
-					<p></p>
-					<ul>
-						<li><img src="img/mark2-green.png"/ class="svg">&nbsp&nbsp&nbsp上屋倉庫</li>
-						<li><img src="img/mark2-red.png"/ class="svg">&nbsp&nbsp&nbsp上屋倉庫（防湿倉庫）</li>
-						<li><img src="img/mark2-orange.png"/ class="svg">&nbsp&nbsp&nbsp船舶荷役設備</li>
-					</ul>
+				<div class="col-sm-1"></div>
+				<div class="col-sm-2"></div>
+				<div class="col-sm-10 about-grid">
+				
 				</div>
-				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
-	<div class="grid_1 part3">
-			<div class="container">
-				<div class="about-grids service_box">
-					<div class="col-sm-12">
-						<div class="about-grids service_box">
-							<h3 class="title">PART 1 <span class="title-main">構内平面図</span><span
-									class="title-triangle bt-down">▼</span><span
-									class="title-triangle bt-up">▲</span></h3>
-							<p class="text-center length-60"></p>
-						</div>
-					</div>
-				</div>
-				<div class="hide-item">
-				<div class="col-sm-2"></div>
-					<div class="col-sm-8 about-grid">
-							<div class="mask"><img src="images/heimenzu.gif"  class="img-responsive"
-								alt="" />
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-	
-				</div>
-			</div>
-			</div>
-		</div>
 
-	<div class="grid_1 part1">
+
+	<div class="grid_eqt part1">
 		<div class="container">
 			<div class="about-grids service_box">
 				<div class="col-sm-12">
 					<div class="about-grids service_box">
-						<h3 class="title">PART 1 <span class="title-main">保管設備</span><span
-								class="title-triangle">▼</span><span
-								class="title-triangle">▲</span></h3>
-						<p class="text-center length-60">荷役設備の完備した防湿倉庫、コイル・パイプ・線材等の専用倉庫を備え、安全で効率的な荷捌きを行います。</p>
+						<h3 class="title"><span class="title-main">構内平面図</span><span
+								class="title-triangle bt-down">▼</span><span class="title-triangle bt-up">▲</span></h3>
+						<p class=" length-60"></p>
+					</div>
+				</div>
+			</div>
+			<div class="hide-item">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 about-grid">
+					<div><img src="images/heimenzu.gif" class="img-responsive" alt="" />
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="grid_eqt part2">
+		<div class="container">
+			<div class="about-grids service_box">
+				<div class="col-sm-12">
+					<div class="about-grids service_box">
+						<h3 class="title"> <span class="title-main">保管設備</span><span
+								class="title-triangle bt-down">▼</span><span class="title-triangle bt-up">▲</span></h3>
+						<p class=" length-60">荷役設備の完備した防湿倉庫、コイル・パイプ・線材等の専用倉庫を備え、安全で効率的な荷捌きを行います。</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="about-grids service_box">
-				<div class="col-md-3 about-grid">
-					<a href="images/KOUNAI090.jpg" title="name" rel="title2">
+				<div class="col-sm-3 about-grid">
+					<a href="images/KOUNAI090.jpg" title="name" rel="title2" target="_blank">
 						<div class="view view-first">
 							<img src="images/KOUNAI090.jpg" class="img-responsive" alt="" />
 						</div>
@@ -206,40 +213,40 @@
 					<h4>コイル倉庫</h4>
 
 				</div>
-				<div class="col-md-3 about-grid">
-					<a href="images/KOUNAI070.jpg" title="name" rel="title2">
-						<div class="view view-first">
+				<div class="col-sm-3 about-grid">
+					<a href="images/KOUNAI070.jpg" title="name" rel="title2" target="_blank">
+						<div class=" view view-first">
 							<img src="images/KOUNAI070.jpg" class="img-responsive" alt="" />
 						</div>
 					</a>
 					<h4>パイプ倉庫</h4>
 				</div>
 				<div class="col-md-3 about-grid">
-					<a href="images/KOUNAI080.jpg" title="name" rel="title2">
+					<a href="images/KOUNAI080.jpg" title="name" rel="title2" target="_blank">
 						<div class="view view-first">
 							<img src="images/KOUNAI080.jpg" class="img-responsive" alt="" />
 						</div>
 					</a>
 					<h4>線材倉庫</h4>
 				</div>
-				<div class="col-md-3 about-grid">
-					<a href="images/KOUNAI060.jpg" title="name" rel="title2">
+				<div class="col-sm-3 about-grid">
+					<a href="images/KOUNAI060.jpg" title="name" rel="title2" target="_blank">
 						<div class="view view-first">
 							<img src="images/KOUNAI060.jpg" class="img-responsive" alt="" />
 						</div>
 					</a>
 					<h4>防湿倉庫</h4>
 				</div>
-				<div class="col-md-3 about-grid">
-					<a href="images/KOUNAI100.jpg" title="name" rel="title2">
+				<div class="col-sm-3 about-grid">
+					<a href="images/KOUNAI100.jpg" title="name" rel="title2" target="_blank">
 						<div class="view view-first">
 							<img src="images/KOUNAI100.jpg" class="img-responsive" alt="" />
 						</div>
 					</a>
 					<h4>ホットコイル野積倉庫</h4>
 				</div>
-				<div class="col-md-3 about-grid">
-					<a href="images/KOUNAI110.jpg" title="name" rel="title2">
+				<div class="col-sm-3 about-grid">
+					<a href="images/KOUNAI110.jpg" title="name" rel="title2" target="_blank">
 						<div class="view view-first">
 							<img src="images/KOUNAI110.jpg" class="img-responsive" alt="" />
 						</div>
@@ -250,16 +257,15 @@
 			</div>
 		</div>
 	</div>
-	<div class="grid_1 part2">
+	<div class="grid_eqt part3">
 		<div class="container">
 			<div class="about-grids service_box">
 				<div class="col-sm-12">
 					<div class="about-grids service_box">
-						<h3 class="title">PART 2 <span class="title-main">構内運搬荷役設備</span>
-							<span
-								class="title-triangle">▼</span><span
-								class="title-triangle">▲</span></h3>
-						<p class="text-center length-60">整備の行き届いた構内車輌にて、安全で円滑な倉庫搬入を実現します。</p>
+						<h3 class="title"><span class="title-main">構内運搬荷役設備</span>
+							<span class="title-triangle bt-down">▼</span><span class="title-triangle bt-up">▲</span>
+						</h3>
+						<p class=" length-60">整備の行き届いた構内車輌にて、安全で円滑な倉庫搬入を実現します。</p>
 					</div>
 				</div>
 
@@ -267,7 +273,7 @@
 
 			<div class="about-grids service_box">
 				<div class="col-sm-6 about-grid">
-					<a href="images/KOUNAI130.jpg" title="name" rel="title2">
+					<a href="images/KOUNAI130.jpg" title="name" rel="title2" target="_blank">
 						<div class="view view-first">
 							<img src="images/KOUNAI130.jpg" class="img-responsive" alt="" />
 						</div>
@@ -275,7 +281,7 @@
 					<h4>35t移動式クレーン</h4>
 				</div>
 				<div class="col-sm-6 about-grid">
-					<a href="images/KOUNAI120.jpg" title="name" rel="title2">
+					<a href="images/KOUNAI120.jpg" title="name" rel="title2" target="_blank">
 						<div class="view view-first">
 							<img src="images/KOUNAI120.jpg" class="img-responsive" alt="" />
 						</div>
@@ -288,31 +294,34 @@
 		</div>
 	</div>
 
-	<div class="grid_1 part4">
+	<div class="grid_eqt part4">
 		<div class="container">
 			<div class="about-grids service_box">
-				<div class="col-sm-6">
+				<div class="col-sm-12">
 					<div class="about-grids service_box">
-						<h3 class="title">PART 1 <span class="title-main">船舶荷役設備</span><span
-								class="title-triangle">▼</span><span
-								class="title-triangle">▲</span></h3>
-						<p class="text-center length-60">本船荷役には４基の大型岸壁クレーンを駆使してスピーディに且つ安全第一で行います。</p>
+						<h3 class="title"><span class="title-main">船舶荷役設備</span><span
+								class="title-triangle bt-down">▼</span><span class="title-triangle bt-up">▲</span></h3>
+						<p class=" length-60">本船荷役には４基の大型岸壁クレーンを駆使してスピーディに且つ安全第一で行います。</p>
 					</div>
 				</div>
-				<div class="col-sm-6 about-grid">
-					<a href="images/KOUNAI001.jpg" title="name" rel="title2">
-						<div class="view view-first">
-							<img src="images/KOUNAI001.jpg" />
-						</div>
-					</a>
-					<h3>岸壁全景</h3>
-					<p class="service_desc">【当社32.2ｔ岸壁クレーンより北西を望む】</p>
-				</div>
-			</div>
 
+			</div>
+		</div>
+		<div class="about-grids service_box">
+			<div class="about-grid grid_center">
+				<a href="images/KOUNAI001.jpg" title="name" rel="title2" target="_blank">
+					<div class="view view-first img-alone">
+						<img src="images/KOUNAI001.jpg" class="img-responsive" />
+					</div>
+				</a>
+				<h3>岸壁全景</h3>
+				<p class="service_desc">【当社32.2ｔ岸壁クレーンより北西を望む】</p>
+			</div>
+		</div>
+		<div class="container">
 			<div class="about-grids service_box">
 				<div class="col-sm-3 about-grid">
-					<a href="images/KOUNAI010.jpg" title="name" rel="title2">
+					<a href="images/KOUNAI010.jpg" title="name" rel="title2" target="_blank">
 						<div class="view view-first">
 							<img src="images/KOUNAI010.jpg" class="img-responsive" alt="" />
 						</div>
@@ -321,7 +330,7 @@
 					<p class="service_desc">水平引込式クレーン 32.2t × 30m</p>
 				</div>
 				<div class="col-sm-3 about-grid">
-					<a href="images/KOUNAI020.jpg" title="name" rel="title2">
+					<a href="images/KOUNAI020.jpg" title="name" rel="title2" target="_blank">
 						<div class="view view-first">
 							<img src="images/KOUNAI020.jpg" class="img-responsive" alt="" />
 						</div>
@@ -330,7 +339,7 @@
 					<p class="service_desc">水平引込式クレーン 10t × 23m</p>
 				</div>
 				<div class="col-sm-3 about-grid">
-					<a href="images/KOUNAI030.jpg" title="name" rel="title2">
+					<a href="images/KOUNAI030.jpg" title="name" rel="title2" target="_blank">
 						<div class="view view-first">
 							<img src="images/KOUNAI030.jpg" class="img-responsive" alt="" />
 						</div>
@@ -339,7 +348,7 @@
 					<p class="service_desc">9.4t 橋式クレーン</p>
 				</div>
 				<div class="col-sm-3 about-grid">
-					<a href="images/KOUNAI050.jpg" title="name" rel="title2">
+					<a href="images/KOUNAI050.jpg" title="name" rel="title2" target="_blank">
 						<div class="view view-first">
 							<img src="images/KOUNAI050.jpg" class="img-responsive" alt="" />
 						</div>
