@@ -681,7 +681,9 @@ ul.about_box h4{
 	text-decoration:none;
 }
 p.service_desc{
-	color:#999;
+	color:rgb(114, 114, 114);
+	text-align: left;
+	padding-top: 0.8em;
 }
 .service_box{
 	margin-bottom:5em;
