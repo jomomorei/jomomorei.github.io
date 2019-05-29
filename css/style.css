@@ -5,7 +5,8 @@ p {margin: 0;}
 html, body{
    font-size: 100%;
 	 background:#fff; 
-	 font-family: 'Noto Sans JP','Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+	 font-family: Verdana, Geneva, Tahoma, sans-serif;
+	 font-weight: 100;
 }
 body a{
 	transition:0.5s all;
@@ -83,7 +84,9 @@ span.main {
 	display: inline-block;
 }
 .top-nav ul li a{
-  color: #fff;
+	color: #fff;
+	font-size: 100%;
+	font-family: 'Sawarabi Gothic','Noto Sans JP','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   transition: 0.5s all;
@@ -91,8 +94,8 @@ span.main {
   -o-transition: 0.5s all;
   -ms-transition: 0.5s all;
   -moz-transition: 0.5s all;
-	padding: 36px 20px 34px 20px;
-	margin: -2px;
+	padding: 36px 21px 35px 21px;
+	margin: -3px;
 }
 .copyrights{
 	text-indent:-9999px;
@@ -179,8 +182,8 @@ span.main {
 .top-nav ul li{
 	display:block;
 	float:none;
-	margin: 1.5em 0.7em;
-	padding: 0 0;
+	margin: 1em 0.7em;
+	padding: 1em 0;
 	text-align: center;
 }
 .top-nav ul li.active,.top-nav ul li:hover{
@@ -539,7 +542,7 @@ ul.list2 li a:hover{
   color: #000;
   text-transform: uppercase;
   margin-bottom: 1em;
-  font-size: 3em;
+  font-size: 2.7em;
   text-align: center;
 }
 .box_3 p{
@@ -682,7 +685,6 @@ ul.about_box h4{
 }
 p.service_desc{
 	color:rgb(114, 114, 114);
-	text-align: left;
 	padding-top: 0.8em;
 }
 .service_box{
@@ -924,18 +926,18 @@ label.btn1.btn2.btn-8.btn-8c {
     line-height:2em;
 }
 .svg{
-	width: 20px;
-	height: 20px;
-	vertical-align: text-bottom;
+	width: 15px;
+	height: 15px;
+	vertical-align:middle;
 }
 
 .access-title{
-	color:firebrick;
-	font-weight: bold;
+	color:rgb(99, 99, 99);
+	font-weight: normal;
 }
 ul.access-list li{
 	line-height: 30px;
-	list-style: square;
+	list-style: none;
 	color: #888;
 	font-size: 1em;
 }
@@ -967,6 +969,11 @@ ul.access-list li{
 }
 a:hover, a:focus {
 	text-decoration:none !important;
+}
+.page_top{
+	position: fixed;
+	float: right;
+	font-size: 0.9em;
 }
 /*--responsive design--*/
 @media (max-width:1024px){
@@ -1295,7 +1302,7 @@ figure.icon img {
 }
 
 }
-@media (max-width:640px){
+@media (max-width:768px){
 .desc {
   min-height: 250px;
   margin: 0 auto;
@@ -1306,6 +1313,14 @@ ul.list1 li a {
 .col-sm-3 {
   width: 50%;
   float: left;
+}
+.col-sm-5{
+	width: 50%;
+  float: left;
+}
+.col-sm-6{
+	width: 100%;
+	float:left;
 }
 ul.list1 {
   margin-bottom: 2em;
@@ -1419,6 +1434,7 @@ figure.icon img {
 .hexagon_box {
   padding-top: 42px;
 }
+
 }
 @media (max-width:480px){
 .header {
