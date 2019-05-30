@@ -304,15 +304,9 @@ span.main {
 	line-height: 1.5em;
 	margin-bottom: 1em;
 }
-.box_6:hover .desc{
-	background:#302836;
-}
+
 .box_6:hover .desc .mail{
 	color:rgb(235, 23, 23);
-}
-
-.box_6:hover .desc .phone{
-	color: #FFF;
 }
 
 .box_5{
