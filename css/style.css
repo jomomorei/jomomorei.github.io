@@ -179,7 +179,7 @@ span.main {
 }
 .profiles,
 .executive {
-	padding: 50px 0;
+	padding: 50px 0 0 0;
 }
 
 .profiles h2,
@@ -189,7 +189,6 @@ span.main {
 	text-align: center;
 	margin-bottom: 30px;
 }
-
 .profiles table,
 .executive table {
 	margin: 0 0 72px;
@@ -228,7 +227,11 @@ span.main {
 	border: 1px solid #000;
 	padding: 20px 50px;
 }
-
+.outline-box:hover{
+	background: #302836;
+	cursor:pointer;
+	color: #fff
+}
 .outline-box p {
 	font-weight: bold
 }
