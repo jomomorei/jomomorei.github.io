@@ -5,7 +5,7 @@ p {margin: 0;}
 html, body{
    font-size: 100%;
 	 background:#fff; 
-	 font-family: Verdana, Geneva, Tahoma, sans-serif;
+	 font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 	 font-weight: 100;
 }
 body a{
@@ -177,6 +177,89 @@ span.main {
   -o-transition: 0.8s;
   transition: 2s;
 }
+.profiles,
+.executive {
+	padding: 50px 0;
+}
+
+.profiles h2,
+.executive h2 {
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.profiles table,
+.executive table {
+	margin: 0 0 72px;
+	width: 100%;
+	border: 1px solid #ccc;
+}
+
+.profiles table tr,
+.profiles table th,
+.executive table tr,
+.executive table th {
+	border: 1px solid #ccc;
+}
+
+.profiles table th,
+.executive table th {
+	min-width: 150px;
+	width: 33.3%;
+	padding: 20px 0 20px 20px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #222;
+	line-height: 1.5;
+	background: #e4e4e4;
+	letter-spacing: 0.9em
+}
+
+.profiles table td,
+.executive table td {
+	padding: 20px 0 20px 22px;
+	font-size: 14px;
+	color: rgb(3, 3, 3);
+	line-height: 1.5;
+}
+.outline-box {
+	border: 1px solid #000;
+	padding: 20px 50px;
+}
+
+.outline-box p {
+	font-weight: bold
+}
+
+.greeting {
+	background: brown;
+	padding: 75px 30px;
+}
+
+.greeting p {
+	color: #fff;
+	padding: 30px 0;
+}
+
+.greeting-text p {
+	font-size: 0.8em;
+	line-height: 20px;
+	padding: 0;
+
+}
+
+.greeting img {
+	vertical-align: baseline
+}
+
+.greeting-text h2 {
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
 /*----responsive-menu-start---*/
 @media(max-width:850px){
 .top-nav ul li{
@@ -965,9 +1048,17 @@ a:hover, a:focus {
 	text-decoration:none !important;
 }
 .page_top{
+	display: block;
 	position: fixed;
-	float: right;
+	right:10px;
+  bottom: 55px;
 	font-size: 0.9em;
+	border: 1px solid #302836;
+	background: #302836;
+
+}
+.page_top p a{
+	color: #FFF;
 }
 /*--responsive design--*/
 @media (max-width:1024px){
@@ -1427,6 +1518,15 @@ figure.icon img {
 }
 .hexagon_box {
   padding-top: 42px;
+}
+.profiles table th,
+.executive table th {
+	width: 100px;
+	letter-spacing: 0.3em
+}
+.outline-box {
+	border: 1px solid #000;
+	padding: 15px 40px;
 }
 
 }
