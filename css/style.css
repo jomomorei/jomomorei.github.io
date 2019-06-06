@@ -231,10 +231,10 @@ span.main {
 
 .greeting {
 	padding: 75px 30px;
-	background: -webkit-linear-gradient(left top, rgb(190, 97, 97) , brown); /* Safari 5.1 - 6.0 */
-	background: -o-linear-gradient(bottom right, rgb(190, 97, 97), brown); /* Opera 11.1 - 12.0 */
-	background: -moz-linear-gradient(bottom right, rgb(190, 97, 97), brown); /* Firefox 3.6 - 15 */
-	background: linear-gradient(to bottom right, rgb(190, 97, 97) , brown); 
+	background: -webkit-linear-gradient(left top, rgb(236, 168, 168) , brown); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(bottom right, rgb(236, 168, 168), brown); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(bottom right, rgb(236, 168, 168), brown); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to bottom right, rgb(236, 168, 168) , brown); 
 }
 
 .greeting p {
