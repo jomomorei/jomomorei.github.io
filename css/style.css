@@ -5,7 +5,7 @@ p {margin: 0;}
 html, body{
    font-size: 100%;
 	 background:#fff; 
-	 font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	 font-weight: 100;
 }
 body a{
@@ -177,47 +177,40 @@ span.main {
   -o-transition: 0.8s;
   transition: 2s;
 }
-.profiles,
-.executive {
+.table-box {
 	padding: 50px 0 0 0;
 }
 
-.profiles h2,
-.executive h2 {
+.table-box h2 {
 	color: #000;
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 30px;
 }
-.profiles table,
-.executive table {
+.table-box table {
 	margin: 0 0 72px;
 	width: 100%;
 	border: 1px solid #ccc;
 }
 
-.profiles table tr,
-.profiles table th,
-.executive table tr,
-.executive table th {
+.table-box table tr,
+.table-box table th {
 	border: 1px solid #ccc;
 }
 
-.profiles table th,
-.executive table th {
+.table-box table th {
 	min-width: 150px;
-	width: 33.3%;
-	padding: 20px 0 20px 20px;
+	width: 180px;
+
+	font-weight: normal;
 	font-size: 14px;
-	font-weight: bold;
 	color: #222;
 	line-height: 1.5;
-	background: #e4e4e4;
-	letter-spacing: 0.9em
+	background: #ffe4e4;
+	text-align: center;
 }
 
-.profiles table td,
-.executive table td {
+.table-box table td {
 	padding: 20px 0 20px 22px;
 	font-size: 14px;
 	color: rgb(3, 3, 3);
@@ -237,8 +230,11 @@ span.main {
 }
 
 .greeting {
-	background: brown;
 	padding: 75px 30px;
+	background: -webkit-linear-gradient(left top, rgb(190, 97, 97) , brown); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(bottom right, rgb(190, 97, 97), brown); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(bottom right, rgb(190, 97, 97), brown); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to bottom right, rgb(190, 97, 97) , brown); 
 }
 
 .greeting p {
@@ -1522,10 +1518,8 @@ figure.icon img {
 .hexagon_box {
   padding-top: 42px;
 }
-.profiles table th,
-.executive table th {
+.table-box table th {
 	width: 100px;
-	letter-spacing: 0.3em
 }
 .outline-box {
 	border: 1px solid #000;
