@@ -215,8 +215,34 @@ span.main {
 	color: rgba(3, 3, 3, 0.877);
 	line-height: 1.5;
 }
-table.table-org td{
+.table-block{
+	width: 60%;
+	min-width:300px; 
+	margin: 0 auto;
+}
+table.table-org {
+	min-width: 300px;
+	height: 170px !important;
+	text-align: center;
+	border-collapse:separate;
+	border-spacing: 3px;
+	border: none;
+	margin: 0 auto;
+}
+
+table.table-org td {
+	min-width: 32px;
+	height: 150px;
+	border: 1px solid rgb(148, 116, 116);
+	border-radius: 5px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1em;
 	padding: 0;
+}
+
+.table-org td.blind {
+	visibility: hidden;
 }
 .outline-box {
 	border: 1px solid #000;
@@ -1667,6 +1693,9 @@ label.btn1.btn2.btn-8.btn-8c {
 }
 .header_about {
 	min-height: 150px;
+}
+.table-block{
+	width: 100%;
 }
 }
 @media (max-width:320px){
