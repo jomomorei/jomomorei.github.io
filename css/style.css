@@ -5,7 +5,7 @@ p {margin: 0;}
 html, body{
    font-size: 100%;
 	 background:#fff; 
-	 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 	 font-weight: 100;
 }
 body a{
@@ -51,7 +51,6 @@ body a{
 	z-index: 999;
 }
 .logo{
-	float: left;
 	display: inline-block;
 	background:#302836;
     margin-bottom: 0;
@@ -213,8 +212,11 @@ span.main {
 .table-box table td {
 	padding: 20px 0 20px 22px;
 	font-size: 14px;
-	color: rgb(3, 3, 3);
+	color: rgba(3, 3, 3, 0.877);
 	line-height: 1.5;
+}
+table.table-org td{
+	padding: 0;
 }
 .outline-box {
 	border: 1px solid #000;

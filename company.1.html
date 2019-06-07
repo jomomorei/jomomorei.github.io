@@ -14,34 +14,60 @@
 		rel="stylesheet">
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<style>
-		.table-block{
-			width: 60%;
-			min-width:300px; 
-			margin: 0 auto;
-		}
-		table.table-org {
-			min-width: 300px;
-			height: 170px !important;
+		.box-group {
 			text-align: center;
-			border-collapse:separate;
-			border-spacing: 3px;
-			border: none;
-			margin: 0 auto;
 		}
 
-		table.table-org td {
-			min-width: 32px;
+		.box-line {
+			min-width: 300px;
+			height: 170px !important;
+		}
+
+		.box-line-c {
+            height: 500px;
+			display:inline-block;
+			border: 0px solid red;
+			vertical-align: middle;
+		}
+	
+
+		.box-line li,.box-line-11 li {
+			display: inline-block;
+			width: 5%;
+			min-width: 35px;
 			height: 150px;
 			border: 1px solid rgb(148, 116, 116);
 			border-radius: 5px;
 			text-align: center;
+			line-height: 20px;
+			vertical-align: middle;
+			padding-top: 15px;
 			margin: 0 auto;
-			font-size: 1em;
+
 		}
 
-		.table-org td.blind {
+		.box-line li.wide-2 {
+			width: 10.2%;
+			min-width: 75px;
+		}
+
+		.box-line li.wide-3 {
+			width: 15.7%;
+			min-width: 115px;
+		}
+
+		.box-line li.wide-6 {
+			width: 31.9%;
+			min-width: 235px;
+		}
+
+		.box-line li.blind {
 			visibility: hidden;
 		}
+		.box-line-11 li {
+			height: 320px;
+		}
+
 	</style>
 </head>
 
@@ -401,45 +427,53 @@
 		<div class="organization table-box">
 			<div class="container">
 				<h2>組織図</h2>
-				<div class="table-block">
-					<table class="table-org" border="1px" cellspacing="0" cellpadding="0">
-						<tr>
-							<td colspan="3"><span>総<br>務<br>部</span></td>
-							<td><span>業<br>務<br>部</span></td>
-							<td colspan="6"><span>事<br>業<br>部</span></td>
-							<td rowspan="2"><span>安<br>全<br>品<br>質<br>管<br>理<br>室</span></td>
-						</tr>
-
-
-						<tr>
-							<td colspan="2"><span>総<br>務<br>課</span></td>
-							<td><span>経<br>理<br>課</span></td>
-							<td><span>業<br>務<br>課</span></td>
-							<td colspan="2"><span>倉<br>庫<br>課</span></td>
-							<td><span>埠<br>頭<br>課</span></td>
-							<td><span>検<br>数<br>課</span></td>
-							<td><span>輸<br>送<br>課</span></td>
-							<td><span>工<br>務<br>課</span></td>
-							
-						</tr>
-						<tr>
-							<td><span>購<br>買<br>係</span></td>
-							<td><span>情<br>報<br>管<br>理<br>係</span></td>
-							<td class="blind"></td>
-							<td><span>業<br>務<br>係</span></td>
-							<td><span>倉<br>庫<br>第<br>一<br>係</span></td>
-							<td><span>倉<br>庫<br>第<br>二<br>係</span></td>
-							<td><span>埠<br>頭<br>係</span></td>
-							<td><span>検<br>数<br>係</span></td>
-							<td><span>輸<br>送<br>係</span></td>
-							<td><span>工<br>務<br>係</span></td>
-							<td class="blind"></td>
-						</tr>
-					</table>
-
+				<div class="box-group">
+					<div class="box-line-c box-line-left">
+						<div class="box-line box-line-1">
+							<ul>
+							<li class="wide-3"><span>総<br>務<br>部</span></li>
+							<li><span>業<br>務<br>部</span></li>
+							<li class="wide-6"><span>事<br>業<br>部</span></li>
+						</ul>
+						</div>
+						<div class="box-line box-line-2">
+							<ul>
+							<li class="wide-2"><span>総<br>務<br>課</span></li>
+							<li><span>経<br>理<br>課</span></li>
+							<li><span>業<br>務<br>課</span></li>
+							<li class="wide-2"><span>倉<br>庫<br>課</span></li>
+							<li><span>埠<br>頭<br>課</span></li>
+							<li><span>検<br>数<br>課</span></li>
+							<li><span>輸<br>送<br>課</span></li>
+							<li><span>工<br>務<br>課</span></li>
+						</ul>
+						</div>
+						<div class="box-line box-line-3">
+							<ul>
+							<li><span>購<br>買<br>係</span></li>
+							<li><span>情<br>報<br>管<br>理<br>係</span></li>
+							<li class="blind"></li>
+							<li><span>業<br>務<br>係</span></li>
+							<li><span>倉<br>庫<br>第<br>一<br>係</span></li>
+							<li><span>倉<br>庫<br>第<br>二<br>係</span></li>
+							<li><span>埠<br>頭<br>係</span></li>
+							<li><span>検<br>数<br>係</span></li>
+							<li><span>輸<br>送<br>係</span></li>
+							<li><span>工<br>務<br>係</span></li>
+						</ul>
+						</div>
+					</div>
+					<div class="box-line-c box-line-right">
+						<div class="box-line-11">
+							<ul>
+							<li class="high-2"><span>安<br>全<br>品<br>質<br>管<br>理<br>室</span></li>
+						</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 	<div class="footer">
 		<div class="container">
