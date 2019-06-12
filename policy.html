@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>安全・品質・衛生・環境</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/css?family=Kosugi|Noto+Sans+JP|Roboto|Sawarabi+Gothic&display=swap"
+		rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<style>
+		.policy-title-box {
+			width: 100%;
+			height: 200px;
+			background: #302836;
+		}
+
+		.policy-title-box h2 {
+			text-align: center;
+			padding-top: 90px;
+			color: #FFF;
+		}
+		.side-title{
+			margin-bottom: 50px;
+		}
+		.side-title ul li {
+			display: inline-block;
+			position: relative;
+			padding: 10px;
+			border: 1px solid #302836;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: 0.9em;
+		}
+		.grid-box{
+			width: 700px;
+			margin: 50px auto;
+		}
+		.grid-box .content p{
+			font-size: 0.9em;
+			line-height: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header-home">
+		<div class="fixed-header">
+			<div class="logo">
+				<a href="index.html">
+					<span class="secondary">株式会社</span>
+					<span class="main">京葉鋼鐵埠頭</span>
+				</a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"> </span>
+				<ul>
+					<li><a href="index.html">企業情報</a></li>
+					<li><a href="premises.html">構内案内</a></li>
+					<li><a href="recruit.html">採用情報</a></li>
+					<li><a href="access.html">アクセス</a></li>
+					<li><a href="contact.html">問い合わせ</a></li>
+				</ul>
+				<!-- script-nav -->
+				<script>
+					$("span.menu").click(function () {
+						$(".top-nav ul").slideToggle(500, function () {
+						});
+					});
+				</script>
+				<!-- //script-nav -->
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!--script-->
+	<script>
+		$(document).ready(function () {
+			$(".top-nav li a").click(function () {
+				$(this).parent().addClass("active");
+				$(this).parent().siblings().removeClass("active");
+			});
+		});
+	</script>
+
+	<!-- /script-for sticky-nav -->
+	<!--//header-->
+	<div class="grid_5">
+		<div class="policy-title-box">
+			<h2>安全・品質・衛生・環境</h2>
+		</div>
+		<div class="container">
+			<div class="col-sm-12 col-md-12">
+				<div class="grid-box">
+					<div class="side-title">
+						<ul>
+							<li><a href="">基本方針</a></li>
+							<li><a href="">2019年度活動方針</a></li>
+						</ul>
+					</div>
+					<div class="content">
+						<h4>理念</h4>
+						<p>鉄鋼製品の、入出庫・保管・配送までを扱い、且つお客様からお預かりした荷物の品質維持を義務としている業務上、
+							「安全の確保が経営の基盤である」との理念に基づき「危険の排除と安全の確保」の徹底および社員の健康を維持する
+							べく、活動を推進しています。</p>
+                        <img 
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="footer_top">
+				<div class="col-sm-4 col-md-4">
+					<ul class="list1">
+						<h4>関する方針</h4>
+						<li><a href="/about/">安全・品質・衛生・環境</a></li>
+						<li> <span class="label label-info">防災協定</span><a href="http://www.golaravel.com/"
+								target="_blank">千葉県</a>・<a href="http://www.ghostchina.com/" target="_blank">市川県</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-md-4">
+					<ul class="list1">
+						<h4>リンク</h4>
+						<li><a href="http://www.yodoko.co.jp/" target="_blank">株式会社淀川製鋼所</a></li>
+						<li><a href="http://www.nipponsteel.com/" target="_blank">日本製鉄株式会社</a></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-4 col-md-4">
+					<ul class="list1">
+						<h4>
+							使用条件 <span class="label label-danger">ご利用上の注意</span>
+						</h4>
+						<p>情報掲載には十分注意しておりますが、第三者によるデータの改竄や、データの伝送によって生じた損害・障害につきましは、当社および情報提供者は一切の責任を負いかねますことをご了承願います。
+						</p>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<div class="copy">
+		<p>Copyright &copy; 2019.Company name All rights reserved</p>
+	</div>
+</body>
+
+</html>
