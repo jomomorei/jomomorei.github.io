@@ -27,18 +27,54 @@
 			max-width: 700px;
 			margin: 100px auto;
 			border: 0px solid #333;
-			background: #FFF
+
 		}
 
 		.grid-box-1 p {
 			font-size: 0.9em;
 			line-height: 30px;
+			margin: 20px;
 		}
 
+		.grid-box-1 .title-content {
+			margin: 50px;
+			text-align: center;
+			background-color: #fff;
+		}
+
+		.grid_6 h4 {
+			text-align: center;
+			border: 0px solid #302836;
+			color: blueviolet;
+			font-weight: bold;
+		}
+		.grid-box-1  .title-middle-line:before {
+			content: '';
+			display: block;
+			height: 2px;
+			width: 100%;
+			background-color: blueviolet;
+			position: relative;
+			top: 13px;
+			left: 0;
+		}
+
+		.grid-box-1  .title-line-text {
+			display: inline-block;
+			background: #fff;
+			padding: 0 12px 0 12px;
+			position: relative;
+			font-size: 1.2em;
+			text-align: center;
+			border: 2px solid blueviolet;
+			border-radius: 10px;
+			color: blueviolet;
+			font-weight: bold;
+		}
 
 		.grid-box-1 table {
 			margin: 10px;
-			width: 100%;
+			width: 95%;
 			min-width: 400px;
 			border: 1px solid #333;
 		}
@@ -69,7 +105,7 @@
 			margin: 50px auto;
 		}
 
-		.return button {
+		.return input {
 			color: #302836;
 			background: #f1cd69;
 			width: 150px;
@@ -77,11 +113,13 @@
 			border-radius: 5px;
 		}
 
-		.return button:hover {
+		.return input:hover {
 			color: #eee;
 			background: #302836;
 			border: 1px solid #302836;
 		}
+
+
 	</style>
 </head>
 
@@ -123,7 +161,11 @@
 			<div class="col-sm-12 col-md-12">
 				<div class="grid-box-1">
 					<div class="grid_6">
-						<h5>１．基本方針</h5>
+						<div class="title-content">
+							<div class="title-middle-line">
+								<span class="title-line-text">社内安全標語</span>
+							</div>
+						</div>
 						<p>毎年、７月の全国安全週間行事の一環として安全標語を募集し、優秀作品を毎月発行の社内安全広報に掲載して安全意識の高揚を図っています。</p>
 						<table>
 							<tr>
@@ -174,7 +216,7 @@
 						</table>
 					</div>
 					<div class="grid_6">
-						<h5>１．基本方針</h5>
+						<h4>月間目標</h4>
 						<p>安全・衛生委員会では、月毎に目標を揚げています。</p>
 						<table>
 							<tr>
@@ -239,60 +281,53 @@
 							</tr>
 						</table>
 					</div>
-					<div class="return">
-						<button id_@>▲　戻る</button></div>
-					<!--script-->
-					<script>
-						$(document).ready(function () {
-							$("#basic-policy").click(function () {
-								$(this).css({ "background-color": "#2cb149", "border": "1px solid #2cb149" });
-							});
-						});
-					</script>
-				</div>
-			</div>
+					<div class="return"><input type="button" name="back" value="▲　戻る"
+							onclick="javascript:history.go(-1);" />
 
-
-
-
-		</div>
-	</div>
-	<div class="footer">
-		<div class="container">
-			<div class="footer_top">
-				<div class="col-sm-4 col-md-4">
-					<ul class="list1">
-						<h4>関する方針</h4>
-						<li><a href="policy.html">安全・品質・衛生・環境</a></li>
-						<li> <span class="label label-info">防災協定</span><a href="http://www.golaravel.com/"
-								target="_blank">千葉県</a>・<a href="http://www.ghostchina.com/" target="_blank">市川県</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-sm-4 col-md-4">
-					<ul class="list1">
-						<h4>リンク</h4>
-						<li><a href="http://www.yodoko.co.jp/" target="_blank">株式会社淀川製鋼所</a></li>
-						<li><a href="http://www.nipponsteel.com/" target="_blank">日本製鉄株式会社</a></li>
-					</ul>
+					</div>
 				</div>
 
-				<div class="col-sm-4 col-md-4">
-					<ul class="list1">
-						<h4>
-							使用条件 <span class="label label-danger">ご利用上の注意</span>
-						</h4>
-						<p>情報掲載には十分注意しておりますが、第三者によるデータの改竄や、データの伝送によって生じた損害・障害につきましは、当社および情報提供者は一切の責任を負いかねますことをご了承願います。
-						</p>
-					</ul>
-				</div>
-				<div class="clearfix"> </div>
+
+
+
 			</div>
 		</div>
-	</div>
-	<div class="copy">
-		<p>Copyright &copy; 2019.Company name All rights reserved</p>
-	</div>
+		<div class="footer">
+			<div class="container">
+				<div class="footer_top">
+					<div class="col-sm-4 col-md-4">
+						<ul class="list1">
+							<h4>関する方針</h4>
+							<li><a href="policy.html">安全・品質・衛生・環境</a></li>
+							<li> <span class="label label-info">防災協定</span><a href="http://www.golaravel.com/"
+									target="_blank">千葉県</a>・<a href="http://www.ghostchina.com/" target="_blank">市川県</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-4 col-md-4">
+						<ul class="list1">
+							<h4>リンク</h4>
+							<li><a href="http://www.yodoko.co.jp/" target="_blank">株式会社淀川製鋼所</a></li>
+							<li><a href="http://www.nipponsteel.com/" target="_blank">日本製鉄株式会社</a></li>
+						</ul>
+					</div>
+
+					<div class="col-sm-4 col-md-4">
+						<ul class="list1">
+							<h4>
+								使用条件 <span class="label label-danger">ご利用上の注意</span>
+							</h4>
+							<p>情報掲載には十分注意しておりますが、第三者によるデータの改竄や、データの伝送によって生じた損害・障害につきましは、当社および情報提供者は一切の責任を負いかねますことをご了承願います。
+							</p>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<div class="copy">
+			<p>Copyright &copy; 2019.Company name All rights reserved</p>
+		</div>
 </body>
 
 </html>
