@@ -14,9 +14,14 @@
 		rel="stylesheet">
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<style>
-		.grid_5{
-			background: #FFF
+		.grid_5 {
+			background: #FFF;
 		}
+
+		.grid_6 {
+			margin: 30px 0;
+		}
+
 		.policy-title-box {
 			width: 100%;
 			height: 200px;
@@ -28,41 +33,88 @@
 			padding-top: 90px;
 			color: #FFF;
 		}
-		.side-title{
+
+		.side-title {
 			margin-bottom: 50px;
 		}
-		.side-title ul{
+
+		.side-title ul {
 			padding: 0;
+			border-bottom: 1px solid #2cb149
 		}
+
 		.side-title ul li {
 			display: inline-block;
 			position: relative;
 			padding: 10px;
-			border: 0px solid #302836;
+			border: 1px solid #2cb149;
 			margin-top: 10px;
-			margin-bottom: 10px;
-			font-size: 0.9em;
-			background:#463e4d
+			margin-bottom: 0px;
+			font-size: 1em;
+			background: #2cb149;
+			color: gold;
+			font-weight: bold
 		}
-		.side-title ul li a{
-			color:floralwhite;
+		.side-title #activity-policy{
+			background-color: #eee;
+			border:1px solid #eee;
 		}
-		.grid-box{
+        .content-2{
+			display: none;
+		}
+		.side-title ul li:hover {
+			cursor: pointer;
+		}
+
+		.grid-box {
 			width: 100%;
 			max-width: 700px;
-			margin: 0px auto;
+			margin: 100px auto;
 			border: 0px solid #333;
-			padding: 50px 00px;
 			background: #FFF
 		}
-		.grid-box .content p{
+
+		.grid-box p,
+		.grid-box ol,
+		.grid-box ul {
 			font-size: 0.9em;
 			line-height: 30px;
 		}
-		.grid-box .content img{
+
+		.grid-box img {
 			margin: 30px auto;
-			height:auto;
+			height: auto;
 			width: 400px;
+		}
+
+		.grid_6 a {
+			color: purple;
+			text-decoration: underline;
+		}
+
+		.grid-box table {
+			margin: 10px;
+			width: auto;
+			min-width: 400px;
+			border: 1px solid #333;
+		}
+
+		.grid-box table th {
+			min-width: 70px;
+			font-weight: normal;
+			font-size: 0.9em;
+			color: #222;
+			text-align: center;
+		}
+
+		.grid-box table td {
+			padding: 10px 0 10px 10px;
+			font-size: 0.9em;
+		}
+
+		.grid-box table tr,
+		.grid-box table th {
+			border: 1px solid rgb(78, 78, 78);
 		}
 	</style>
 </head>
@@ -97,17 +149,7 @@
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-	<!--script-->
-	<script>
-		$(document).ready(function () {
-			$(".top-nav li a").click(function () {
-				$(this).parent().addClass("active");
-				$(this).parent().siblings().removeClass("active");
-			});
-		});
-	</script>
 
-	<!-- /script-for sticky-nav -->
 	<!--//header-->
 	<div class="grid_5">
 		<div class="policy-title-box">
@@ -118,17 +160,146 @@
 				<div class="grid-box">
 					<div class="side-title">
 						<ul>
-							<li><a href="">基本方針</a></li>
-							<li><a href="">2019年度活動方針</a></li>
+							<li id="basic-policy">基本方針</li>
+							<li id="activity-policy">2019年度活動方針</li>
 						</ul>
 					</div>
-					<div class="content">
-						<h4>理念</h4>
+					<!--script-->
+					<script>
+						$(document).ready(function () {
+							$("#basic-policy").click(function () {
+								$(this).css({"background-color": "#2cb149","border":"1px solid #2cb149"});
+								$("#activity-policy").css({"background-color": "#eee","border":"1px solid #eee"});
+								$(".content-1").show();
+								$(".content-2").hide();
+							});
+							$("#activity-policy").click(function () {
+								$(this).css({"background-color": "#2cb149","border":"1px solid #2cb149"});
+								$("#basic-policy").css({"background-color": "#eee","border":"1px solid #eee"});
+								$(".content-2").show();
+								$(".content-1").hide();
+							});
+						});
+					</script>
+					<div class="content-1">
+						<h4>・理念・</h4>
 						<p>鉄鋼製品の、入出庫・保管・配送までを扱い、且つお客様からお預かりした荷物の品質維持を義務としている業務上、
 							「安全の確保が経営の基盤である」との理念に基づき「危険の排除と安全の確保」の徹底および社員の健康を維持する
 							べく、活動を推進しています。</p>
-							<img src="images/houshin1.jpg" alt="image" class="img-responsive" alt="" />
-							<img src="images/houshin2.jpg" alt="image" class="img-responsive" alt="" />
+						<img src="images/houshin1.jpg" alt="image" class="img-responsive" alt="" />
+						<img src="images/houshin2.jpg" alt="image" class="img-responsive" alt="" />
+					</div>
+					<div class="content-2">
+						<h4>・安全衛生品質環境管理活動の推進・</h4>
+						<ol type="I">
+							<li>安全関係諸法令を順守すると共に必要な自主基準を設け、管理レベルの向上を図ります。</li>
+							<li>安全の確保、品質の維持および健康の確保は良好なコミュニケーションのもとに実現されるとの認識に立ち、社員との協議を尊重します。</li>
+							<li>全社員および関係会社に対し、安全確保および品質確保に必要な教育、訓練および情報提供を実施します。</li>
+						</ol>
+						<div class="grid_6">
+							<h5>１．基本方針</h5>
+							<p>『安全を全てに優先し、明るく健康な無災害職場を構築する』</p>
+							<table>
+								<tr>
+									<th>安　全</th>
+									<td>『基本ルール順守と危険源の排除』</td>
+								</tr>
+								<tr>
+									<th>衛　生</th>
+									<td>『快適な職場づくりによる心と体の健康維持』</td>
+								</tr>
+
+								<tr>
+									<th>品　質</th>
+									<td>『顧客満足の為の品質管理とサービス』</td>
+								</tr>
+								<tr>
+									<th>環　境</th>
+									<td>『環境保全活動の継続的改善と環境汚染の予防』</td>
+								</tr>
+							</table>
+						</div>
+						<div class="grid_6">
+							<h5>2．重点取り組み事項 </h5>
+							<p>『慣れによる過信、怠慢による確認不足行為をなくす』</p>
+							<table>
+								<tr>
+									<th>安　全</th>
+									<td>荷台からの転落災害を撲滅するための設備強化と確実な運用！<br />
+										吊荷へのノータッチ化と確実な退避により、挟まれ災害を防止する　</td>
+								</tr>
+								<tr>
+									<th>衛　生</th>
+									<td>作業環境の改善で、全従業員が心身ともに健康で快適な職場を目指す！</td>
+								</tr>
+
+								<tr>
+									<th>品　質</th>
+									<td>わかりやすく正確な合図と思いやりのあるクレーン操作で製品事故ゼロへ！</td>
+								</tr>
+								<tr>
+									<th>環　境</th>
+									<td>燃料油等の漏洩を徹底監視し、流出による環境汚染を防止する。</td>
+								</tr>
+							</table>
+						</div>
+						<div class="grid_6">
+							<h5>３．年度目標 </h5>
+							<ol type="a">
+								<li>労働（重大・休業・不休）災害　　　　 ゼロ件</li>
+								<li>製品・物損・設備損傷事故　　　　 　　ゼロ件</li>
+								<li>誤出荷　　　　 　　　　　　　　　　　ゼロ件</li>
+								<li>通勤・業務中の加害交通事故　　　　 　ゼロ件</li>
+								<li>火災・漏えい　　　　 　　　　　　　　ゼロ件</li>
+								<li>従業員自ら健康管理を積極的に行い、心と身体の健康を保つ</li>
+							</ol>
+
+						</div>
+						<div class="grid_6">
+							<h5>４．活動の推進</h5>
+							<table>
+								<tr>
+									<th>共　通</th>
+									<td>「作業ルールの明確化－周知徹底－確実な実施－改善」<br />
+										「危険源の洗い出しと排除の実施」　</td>
+								</tr>
+								<tr>
+									<th>安　全</th>
+									<td>「不安全状態と不安全行為の排除の実施」 </td>
+								</tr>
+								<tr>
+									<th>衛　生</th>
+									<td>「職場環境の評価・改善の継続実施」</td>
+								</tr>
+
+								<tr>
+									<th>品　質</th>
+									<td>「預かった製品に、常に細心の注意を払い、製品の品質や用途に最適な作業・管理の実施」</td>
+								</tr>
+								<tr>
+									<th>環　境</th>
+									<td>「地球環境保全への取り組み」</td>
+								</tr>
+							</table>
+						</div>
+						<div class="grid_6">
+							<h5>５．安全行事</h5>
+							<ul>
+								<li><a href="index.html">安全標語及びポスターの募集（１回／年）</a></li>
+								<li>安全品質強化全社運動月間（１回／年）</li>
+								<li>防災訓練の実施（１回／年）</li>
+							</ul>
+
+						</div>
+						<div class="grid_6">
+							<h5>６．健康・衛生・作業環境</h5>
+							<ul>
+								<li>健康診断の実施<br />
+									生活習慣病の定期検診（費用は、健康保険組合が一部負担）および二次検査まで、義務付け。</li>
+								<li>快適な職場づくりの推進</li>
+								<li>酷暑時の健康飲料、熱塩飴の支給</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
