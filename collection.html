@@ -19,7 +19,7 @@
 		}
 
 		.grid_6 {
-			margin: 30px 0;
+			margin: 30px 0 80px 0;
 		}
 
 		.grid-box-1 {
@@ -37,29 +37,23 @@
 		}
 
 		.grid-box-1 .title-content {
-			margin: 50px;
+			margin: 30px 0;
 			text-align: center;
 			background-color: #fff;
 		}
 
-		.grid_6 h4 {
-			text-align: center;
-			border: 0px solid #302836;
-			color: blueviolet;
-			font-weight: bold;
-		}
-		.grid-box-1  .title-middle-line:before {
+		.grid-box-1 .title-middle-line:before {
 			content: '';
 			display: block;
-			height: 2px;
+			height: 3px;
 			width: 100%;
 			background-color: blueviolet;
 			position: relative;
-			top: 13px;
+			top: 18px;
 			left: 0;
 		}
 
-		.grid-box-1  .title-line-text {
+		.grid-box-1 .title-line-text {
 			display: inline-block;
 			background: #fff;
 			padding: 0 12px 0 12px;
@@ -74,13 +68,13 @@
 
 		.grid-box-1 table {
 			margin: 10px;
-			width: 95%;
+			width: 97%;
 			min-width: 400px;
 			border: 1px solid #333;
 		}
 
 		.grid-box-1 table th {
-			min-width: 70px;
+			width: 80px;
 			font-weight: normal;
 			font-size: 0.9em;
 			color: #222;
@@ -90,13 +84,21 @@
 		.grid-box-1 table td {
 			padding: 10px;
 			font-size: 0.9em;
-			min-width: 80px;
+			
 		}
-
+		 table.safety-slogan td{
+			min-width: 80px;
+		 }
+		
 		.grid-box-1 table tr,
 		.grid-box-1 table th,
 		.grid-box-1 table td {
-			border: 1px solid rgb(78, 78, 78);
+			border: 2px solid rgb(230, 227, 227);
+			background: rgb(217, 201, 233);
+		}
+
+		table.month-target td:nth-child(even) {
+			text-align: center;
 		}
 
 		.return {
@@ -106,10 +108,10 @@
 		}
 
 		.return input {
-			color: #302836;
-			background: #f1cd69;
+			color: #eee;
+			background: rgb(148, 99, 194);
 			width: 150px;
-			border: 1px solid #f1cd69;
+			border: 1px solid rgb(148, 99, 194);
 			border-radius: 5px;
 		}
 
@@ -118,8 +120,6 @@
 			background: #302836;
 			border: 1px solid #302836;
 		}
-
-
 	</style>
 </head>
 
@@ -167,9 +167,9 @@
 							</div>
 						</div>
 						<p>毎年、７月の全国安全週間行事の一環として安全標語を募集し、優秀作品を毎月発行の社内安全広報に掲載して安全意識の高揚を図っています。</p>
-						<table>
+						<table class="safety-slogan">
 							<tr>
-								<th>２０１６</th>
+								<th>2016</th>
 								<td>最優秀賞</td>
 								<td>気を抜くな！　慣れた作業に落とし穴　危険を見つける安全職場</td>
 							</tr>
@@ -184,7 +184,7 @@
 								<td>慣れによる気の緩みが事故の元、忘れるな初心の心と基本作業</td>
 							</tr>
 							<tr>
-								<th>２０１７</th>
+								<th>2017</th>
 								<td>最優秀賞</td>
 								<td>守ろうよ　決めたルールと作業手順　相互注意で無災害</td>
 							</tr>
@@ -199,7 +199,7 @@
 								<td>急ぐ作業に隠れた危険　心掛けよう心のブレーキ　必ず守ろう基本作業！</td>
 							</tr>
 							<tr>
-								<th>２０１８</th>
+								<th>2018</th>
 								<td>最優秀賞</td>
 								<td>身近に潜む危険作業、しない、させない、やらせない、相互注意で０災害</td>
 							</tr>
@@ -216,9 +216,13 @@
 						</table>
 					</div>
 					<div class="grid_6">
-						<h4>月間目標</h4>
+						<div class="title-content">
+							<div class="title-middle-line">
+								<span class="title-line-text">月間目標</span>
+							</div>
+						</div>
 						<p>安全・衛生委員会では、月毎に目標を揚げています。</p>
-						<table>
+						<table class="month-target">
 							<tr>
 								<th>2018</th>
 								<td>4</td>
@@ -299,9 +303,9 @@
 						<ul class="list1">
 							<h4>関する方針</h4>
 							<li><a href="policy.html">安全・品質・衛生・環境</a></li>
-							<li> <span class="label label-info">防災協定</span><a href="http://www.golaravel.com/"
-									target="_blank">千葉県</a>・<a href="http://www.ghostchina.com/" target="_blank">市川県</a>
-							</li>
+							<li> <span class="label label-info">防災協定</span><a href="agreement-1.html"
+								>千葉県</a>・<a href="agreement-2.html">市川県</a>
+						</li>
 						</ul>
 					</div>
 					<div class="col-sm-4 col-md-4">
