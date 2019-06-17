@@ -202,7 +202,7 @@ span.main {
 
 	font-weight: normal;
 	font-size: 14px;
-	color: #222;
+	color: #000;
 	line-height: 1.5;
 	background: #ffe4e4;
 	text-align: center;
@@ -211,7 +211,7 @@ span.main {
 .table-box table td {
 	padding: 20px 0 20px 22px;
 	font-size: 14px;
-	color: rgba(3, 3, 3, 0.877);
+	color: #000;
 	line-height: 1.5;
 }
 .table-block{
@@ -270,7 +270,7 @@ table.table-org td {
 }
 
 .greeting-text p {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	line-height: 20px;
 	padding: 0;
 
