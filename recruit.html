@@ -10,46 +10,100 @@
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
-	<link href="https://fonts.googleapis.com/css?family=Kosugi|Noto+Sans+JP|Roboto|Sawarabi+Gothic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kosugi|Noto+Sans+JP|Roboto|Sawarabi+Gothic&display=swap"
+		rel="stylesheet">
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<style>
 		table {
-			position: relative;
 
-			max-width: 800px;
-			margin: 5px auto;
-			padding: 0;
+			width: 95%;
+			margin: 30px auto;
 			border-top: 1px solid #a09f9f;
-			border-bottom: 1px solid #a08585;
+			border-bottom: 1px solrgb(122, 122, 122)585;
 		}
 
 		/* Padding and font style */
+		.table td
+		{
+			line-height: 50px;
+			height: 70px;
+			vertical-align:middle
+		}
 		.table td,
 		.table th {
-			padding: 10px 10px;
-			min-width: 100px;
+			vertical-align:middle;
+			min-width: 150px;
 			font-size: 1.0em;
-			color: #0d0f2083;
+			color: #443e49;
 		}
 
 		/* Alternating background colors */
 		.table tr:nth-child(even) {
-			background: rgb(221, 226, 228)
+			background: rgb(251, 253, 253)
 		}
 
 		.table tr:nth-child(odd) {
-			background: rgb(249, 249, 250)
+			background: rgb(240, 240, 240)
 		}
+
+
 
 		.title {
 			text-align: center;
 			position: relative;
-			margin-top: 30px;
-			margin-bottom: 20px;
+			margin: 30px auto;
+			background: #302836;
+			height: 70px;
+			color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			max-width: 600px;
 		}
-		.span_2{
-			padding-left:0;
+
+		.span_2 {
+			padding-left: 0;
 			padding-right: 0;
+		}
+
+		.recruit-title h3 {
+			font-size: 1.8em;
+			text-align: center;
+			font-weight: bold;
+			color: rgb(92, 92, 92);
+			margin-bottom: 50px;
+		}
+
+		.frontier img {
+			height: 50px;
+		}
+
+		.frontier p {
+			font-size: 1.0em;
+			color: #302836;
+			font-weight: 600;
+			line-height: 30px;
+		}
+
+		.frontier p span {
+			display: inline-block;
+			background: darkcyan;
+			border: 1px solid cornflowerblue;
+			border-radius: 50%;
+			width: 30px;
+			height: 30px;
+			color: #fff;
+			font-weight: normal;
+			text-align: center;
+			margin-right: 10px;
+		}
+
+	
+
+		.request {
+			border: 1px solid rgb(207, 207, 207);
+			margin: 30px;
+			height: 5em;
+			padding: 10px;
 		}
 	</style>
 </head>
@@ -97,96 +151,103 @@
 	<!-- /script-for sticky-nav -->
 	<!--//header-->
 	<div class="grid_1">
-			<div class="box_1">
-					<h3>採用情報</h3>
-				</div>
-		<div class="frontier" >
+		<div class="recruit-title">
+			<h3>募集要項</h3>
+		</div>
+		<div class="frontier">
 			<div class="container">
-				<div class="col-md-2"></div>
-				<div class="col-md-8 span_2" style="background: rgb(250, 248, 162)">
-					<div class="feature about_box1">
-						<i class="fa fa-hand-o-right">募集要項</i>
-						<p>➀　向上性・協調性のある人材を求めています。</p>
-						<p>②　（株）淀川製鉄所、日本製鉄（株）が大株主で、経営が安定しています。</p>
-						<p>③　１事業所としては、日本最大規模を誇る鉄鋼専用倉庫・物流基地です。</p>
-						<p>④　転勤はありません。</p>
+				<div class="col-md-6">
+					<div class="request">
+						<p><span>1</span>向上性・協調性のある人材を求めています。</p>
 					</div>
 				</div>
-				<div class="col-md-2"></div>
+				<div class="col-md-6">
+					<div class="request">
+						<p><span>2</span>（株）淀川製鉄所、日本製鉄（株）が大株主で、経営が安定しています。</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="request">
+						<p><span>3</span>１事業所としては、日本最大規模を誇る鉄鋼専用倉庫・物流基地です。</p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="request">
+						<p><span>4</span>転勤はありません。</p>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<div class="container">
-			<div class="row">
-					<div class="col-md-2"></div>
-				<div class="col-md-8 ">
-					<h3 class="title">平成31年度入社募集要項</h3>
-					<table class="table">
-						<tbody>
-							<tr>
-								<td> 募集対象</td>
-								<td>平成31年3月 高等学校を卒業見込みの方</td>
-							</tr>
-							<tr>
-								<td> 採用数</td>
-								<td>5名</td>
-							</tr>
-							<tr>
-								<td>勤務地</td>
-								<td>本社</td>
-							</tr>
-							<tr>
-								<td>給与</td>
-								<td>基本給　165,000円</td>
-							</tr>
-							<tr>
-								<td>勤務地</td>
-								<td>本社</td>
-							</tr>
-							<tr>
-								<td>昇給</td>
-								<td>年1回（4月）</td>
-							</tr>
-							<tr>
-								<td>賞与</td>
-								<td>年2回（6月・12月）</td>
-							</tr>
-							<tr>
-								<td>諸手当</td>
-								<td>皆勤手当　家族手当　時間外勤務手当　通勤手当　住宅手当　食事手当他</td>
-							</tr>
-							<tr>
-								<td>就業時間</td>
-								<td>（平日）8:30～16:45　（土曜日）8:30～12:00</td>
-							</tr>
-							<tr>
-								<td>休日休暇</td>
-								<td>土曜日（交替制　月2回）　日曜日　祝祭日　創立記念日　年末年始　
-									年次有給休暇（16～20日　※半日有給制度有）　その他（結婚　忌引　夏季　育児　介護他）</td>
-							</tr>
-							<tr>
-								<td>福利厚生</td>
-								<td><span style="color:brown; font-weight: bold">制度　：</span>　各種社会保険　慶弔金　持株制度</br>
-									&emsp;&emsp;&emsp;&emsp;&emsp;永年勤続表彰　改善提案表彰　資格取得制度（クレーン運転士・大型運転免許等）　退職金制度</br>
-									<span
-										style="color:brown; font-weight: bold">施設　：</span>　家族寮（10,000円／月）　独身寮（4,000円／月）　社員食堂　<span
-										class="label label-success">※平成30年7月現在</span>
-								</td>
-							</tr>
-							<tr>
-								<td>応募方法</td>
-								<td>学校推薦（自由応募は受け付けていません）</td>
-							</tr>
-							<tr>
-								<td>選考方法</td>
-								<td><span style="color:brown; font-weight: bold">筆記　：</span>　一般常識　作文　　</br><span
-										style="color:brown; font-weight: bold">面接　：</span>　個人面接</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+
+				<h3 class="title">平成31年度入社募集要項</h3>
+				<table class="table">
+					<tbody>
+						<tr>
+							<th> 募集対象</th>
+							<td>平成31年3月 高等学校を卒業見込みの方</td>
+						</tr>
+						<tr>
+							<th> 採用数</th>
+							<td>5名</td>
+						</tr>
+						<tr>
+							<th>勤務地</th>
+							<td>本社</td>
+						</tr>
+						<tr>
+							<th>給与</th>
+							<td>基本給　165,000円</td>
+						</tr>
+						<tr>
+							<th>勤務地</th>
+							<td>本社</td>
+						</tr>
+						<tr>
+							<th>昇給</th>
+							<td>年1回（4月）</td>
+						</tr>
+						<tr>
+							<th>賞与</th>
+							<td>年2回（6月・12月）</td>
+						</tr>
+						<tr>
+							<th>諸手当</th>
+							<td>皆勤手当　家族手当　時間外勤務手当　通勤手当　住宅手当　食事手当他</td>
+						</tr>
+						<tr>
+							<th>就業時間</th>
+							<td>（平日）8:30～16:45　（土曜日）8:30～12:00</td>
+						</tr>
+						<tr>
+							<th>休日休暇</th>
+							<td>土曜日（交替制　月2回）　日曜日　祝祭日　創立記念日　年末年始　
+								年次有給休暇（16～20日　※半日有給制度有）　その他（結婚　忌引　夏季　育児　介護他）</td>
+						</tr>
+						<tr>
+							<th>福利厚生</th>
+							<td><span style="color:brown; font-weight: bold">制度　：</span>　各種社会保険　慶弔金　持株制度</br>
+								&emsp;&emsp;&emsp;&emsp;&emsp;永年勤続表彰　改善提案表彰　資格取得制度（クレーン運転士・大型運転免許等）　退職金制度</br>
+								<span
+									style="color:brown; font-weight: bold">施設　：</span>　家族寮（10,000円／月）　独身寮（4,000円／月）　社員食堂　<span
+									class="label label-success">※平成30年7月現在</span>
+							</td>
+						</tr>
+						<tr>
+							<th>応募方法</th>
+							<td>学校推薦（自由応募は受け付けていません）</td>
+						</tr>
+						<tr>
+							<th>選考方法</th>
+							<td><span style="color:brown; font-weight: bold">筆記　：</span>　一般常識　作文　　</br><span
+									style="color:brown; font-weight: bold">面接　：</span>　個人面接</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
+	</div>
 	</div>
 	<div class="footer">
 		<div class="container">
@@ -195,9 +256,9 @@
 					<ul class="list1">
 						<h4>関する方針</h4>
 						<li><a href="policy.html">安全・品質・衛生・環境</a></li>
-						<li> <span class="label label-info">防災協定</span><a href="agreement-1.html"
-							>千葉県</a>・<a href="agreement-2.html">市川県</a>
-					</li>
+						<li> <span class="label label-info">防災協定</span><a href="agreement-1.html">千葉県</a>・<a
+								href="agreement-2.html">市川県</a>
+						</li>
 					</ul>
 				</div>
 				<div class="col-sm-4 col-md-4">
