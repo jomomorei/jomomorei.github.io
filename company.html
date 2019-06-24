@@ -10,20 +10,33 @@
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
-	<link href="https://fonts.googleapis.com/css?family=Rubik|Kosugi|Noto+Sans+JP|Roboto|Sawarabi+Gothic&display=swap"
+	<link
+		href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Rubik|Kosugi|Noto+Sans+JP|Roboto|Sawarabi+Gothic&display=swap"
 		rel="stylesheet">
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<style>
-		.greeting-text:before {
-  content: "";
-  position: absolute;
-  top: -60px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 300px solid transparent;
-  border-right: 300px solid transparent;
-  border-bottom: 100px solid #302836;
+		.grid_1 {
+			padding-top: 0;
+		}
+
+		.grid_bg_1 {
+			background: url(./images/pic9.jpg);
+
+		}
+
+		.grid_bg_2 {
+			padding-top: 7em;
+			background: rgba(255, 255, 255, .85);
+		}
+
+		.greeting p {
+			font-family: "Kosugi Maru", sans-serif;
+			line-height: 35px;
+		}
+
+		p.president {
+			text-align: center
+		}
 	</style>
 </head>
 
@@ -46,7 +59,12 @@
 					<li><a href="contact.html">問い合わせ</a></li>
 				</ul>
 				<!-- script-nav -->
-
+				<script>
+					$("span.menu").click(function () {
+						$(".top-nav ul").slideToggle(500, function () {
+						});
+					});
+				</script>
 				<!-- //script-nav -->
 			</div>
 			<div class="clearfix"> </div>
@@ -64,57 +82,52 @@
 	<!-- /script-for sticky-nav -->
 	<!--//header-->
 	<div class="grid_1">
-		<div class="container">
-			<div class="box_1">
-				<h3>企業情報</h3>
-			</div>
-		</div>
-		<div class="container">
-			<div class="span12 hexagon_box">
-				<section class="effect-1">
-					<ul>
-						<li>
-							<div class="outline-box rectangle">
-								<p>社長挨拶</p>
-							</div>
-						</li>
-						<li>
-							<div class="outline-box rectangle">
-								<p>会社概要</p>
-							</div>
-						</li>
-						<li>
-							<div class="outline-box rectangle">
-								<p>役員一覧</p>
-							</div>
-						</li>
-					</ul>
-				</section>
-				<section>
-					<ul>
-						<li>
-							<div class="outline-box rectangle">
-								<p>沿革</p>
-							</div>
-						</li>
-						<li>
-							<div class="outline-box rectangle">
-								<p>組織図</p>
-							</div>
-						</li>
-					</ul>
-				</section>
-			</div>
-		</div>
-		<div class="greeting">
-			<div class="container">
-				<div class="col-sm-4 col-md-4">
-					<img src="images/president.jpg" alt="image" class="img-responsive" alt="" />
-					<p>代表取締役社長　河本　隆明</p>
+		<div class="grid_bg_1">
+			<div class="grid_bg_2">
+				<div class="container">
+					<div class="box_1">
+						<h3>企業情報</h3>
+					</div>
 				</div>
-				<div class="col-sm-8 col-md-8 ">
+				<div class="container">
+					<div class="span12 hexagon_box">
+						<section class="outline-box">
+							<ul>
+								<li><a href="message.html">社長挨拶</a>
+								</li>
+								<li>
+									<a href="profiles.html">
+										会社概要
+									</a>
+								</li>
+								<li>
+								<a href="executive.html">役員一覧</a>
+								</li>
+							</ul>
+						</section>
+						<section class="outline-box">
+							<ul>
+								<li><a href="development.html">沿革</a>
+								</li>
+								<li><a href="organization.html">組織図</a>
+								</li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="greeting table-box">
+			<div class="container">
+				<h2>社長挨拶</h2>
+				<div class="col-sm-3 col-md-3">
+					<img src="images/president.jpg" alt="image" class="img-responsive" alt="" />
+					<p class="president">代表取締役社長</p>
+					　<p class="president">河本　隆明</p>
+				</div>
+				<div class="col-sm-9 col-md-9">
 					<div class="greeting-text">
-						<h2>社長挨拶</h2>
+
 						<p>当社は昭和４３年、（株）淀川製鋼所、八幡製鐵（株）の出資を元に設立、八幡製鐵（株）の京葉地区から北関東向けに対する鋼材物流基地として発足しました。</p>
 						　　
 						<p>昭和４６年、（株）淀川製鋼所市川工場稼動に伴い、原材料、製品の受け入れ、保管業務も併せて受託し、以来堅調な実績を挙げ今日に至っております。その間、当社はサービス、作業能率の向上、競争力の強化をモットーに荷役設備機器の更新増設、倉庫並びに保管基地の新設拡張等を継続して進め、また（株）淀川製鋼所・日本製鉄（株）とのオンラインで、正確かつ迅速な情報処理を行ってきております。
@@ -402,7 +415,7 @@
 							<td><span>検<br>数<br>課</span></td>
 							<td><span>輸<br>送<br>課</span></td>
 							<td><span>工<br>務<br>課</span></td>
-							
+
 						</tr>
 						<tr>
 							<td><span>購<br>買<br>係</span></td>
@@ -430,8 +443,8 @@
 					<ul class="list1">
 						<h4>関する方針</h4>
 						<li><a href="policy.html">安全・品質・衛生・環境</a></li>
-						<li> <span class="label label-info">防災協定</span><a href="http://www.golaravel.com/"
-								target="_blank">千葉県</a>・<a href="http://www.ghostchina.com/" target="_blank">市川県</a>
+						<li> <span class="label label-info">防災協定</span><a href="agreement-1.html">千葉県</a>・<a
+								href="agreement-2.html">市川県</a>
 						</li>
 					</ul>
 				</div>

@@ -183,7 +183,7 @@ span.main {
 	color: #000;
 	font-weight: bold;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 }
 .table-box table {
 	margin: 0 0 72px;
@@ -201,16 +201,14 @@ span.main {
 	width: 180px;
 
 	font-weight: normal;
-	font-size: 14px;
 	color: #000;
 	line-height: 1.5;
-	background: #ffe4e4;
+	background: #faecec;
 	text-align: center;
 }
 
 .table-box table td {
 	padding: 20px 0 20px 22px;
-	font-size: 14px;
 	color: #000;
 	line-height: 1.5;
 }
@@ -232,7 +230,7 @@ table.table-org {
 table.table-org td {
 	min-width: 32px;
 	height: 150px;
-	border: 1px solid rgb(148, 116, 116);
+	border: 1px solid rgb(211, 182, 182);
 	border-radius: 5px;
 	text-align: center;
 	margin: 0 auto;
@@ -243,38 +241,32 @@ table.table-org td {
 .table-org td.blind {
 	visibility: hidden;
 }
-.outline-box {
+.outline-box a{
 	border: 1px solid #000;
 	padding: 20px 50px;
 }
-.outline-box:hover{
-	background: #302836;
-	cursor:pointer;
-	color: #fff
-}
-.outline-box p {
+.outline-box a {
 	font-weight: bold
 }
 
-.greeting {
-	padding: 75px 0px;
-
-}
-
-.greeting p {
+.outline-box a:hover,.present{
+	background: #302836;
+	cursor:pointer;
 	
-	padding: 30px 0;
+}
+.outline-box li:hover a,.present{
+color: #fff
 }
 
 .greeting-text p {
-	font-size: 0.9em;
+	font-size: 1.0em;
 	line-height: 20px;
 	padding: 0;
 
 }
 
 .greeting img {
-	vertical-align: baseline
+	padding-top: 15px;
 }
 
 
@@ -1543,7 +1535,7 @@ figure.icon img {
 .table-box table th {
 	width: 100px;
 }
-.outline-box {
+.outline-box a{
 	border: 1px solid #000;
 	padding: 15px 40px;
 }

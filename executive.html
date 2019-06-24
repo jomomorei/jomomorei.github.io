@@ -10,8 +10,7 @@
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
-	<link
-		href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Rubik|Kosugi|Noto+Sans+JP|Roboto|Sawarabi+Gothic&display=swap"
+	<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Rubik|Kosugi|Noto+Sans+JP|Roboto|Sawarabi+Gothic&display=swap"
 		rel="stylesheet">
 	<link href="css/font-awesome.css" rel="stylesheet">
 	<style>
@@ -28,13 +27,11 @@
 			padding-top: 7em;
 			background: rgba(255, 255, 255, .85);
 		}
-
-		.greeting p {
-			font-family: "Kosugi Maru", sans-serif;
+		.greeting p{
+			font-family: "Kosugi Maru",sans-serif;
 			line-height: 35px;
 		}
-
-		p.president {
+		p.president{
 			text-align: center
 		}
 	</style>
@@ -59,12 +56,7 @@
 					<li><a href="contact.html">問い合わせ</a></li>
 				</ul>
 				<!-- script-nav -->
-				<script>
-					$("span.menu").click(function () {
-						$(".top-nav ul").slideToggle(500, function () {
-						});
-					});
-				</script>
+
 				<!-- //script-nav -->
 			</div>
 			<div class="clearfix"> </div>
@@ -93,7 +85,7 @@
 					<div class="span12 hexagon_box">
 							<section class="outline-box">
 									<ul>
-										<li><a href="message.html" class="present">社長挨拶</a>
+										<li><a href="message.html">社長挨拶</a>
 										</li>
 										<li>
 											<a href="profiles.html">
@@ -101,7 +93,7 @@
 											</a>
 										</li>
 										<li>
-										<a href="executive.html">役員一覧</a>
+										<a href="executive.html" class="present">役員一覧</a>
 										</li>
 									</ul>
 								</section>
@@ -117,31 +109,66 @@
 				</div>
 			</div>
 		</div>
-		<div class="greeting table-box">
+	
+		<div class="executive table-box">
 			<div class="container">
-				<h2>社長挨拶</h2>
-				<div class="col-sm-3 col-md-3">
-					<img src="images/president.jpg" alt="image" class="img-responsive" alt="" />
-					<p class="president">代表取締役社長</p>
-					　<p class="president">河本　隆明</p>
-				</div>
-				<div class="col-sm-9 col-md-9">
-					<div class="greeting-text">
-
-						<p>当社は昭和４３年、（株）淀川製鋼所、八幡製鐵（株）の出資を元に設立、八幡製鐵（株）の京葉地区から北関東向けに対する鋼材物流基地として発足しました。</p>
-						　　
-						<p>昭和４６年、（株）淀川製鋼所市川工場稼動に伴い、原材料、製品の受け入れ、保管業務も併せて受託し、以来堅調な実績を挙げ今日に至っております。その間、当社はサービス、作業能率の向上、競争力の強化をモットーに荷役設備機器の更新増設、倉庫並びに保管基地の新設拡張等を継続して進め、また（株）淀川製鋼所・日本製鉄（株）とのオンラインで、正確かつ迅速な情報処理を行ってきております。
-						</p>
-						　　
-						<p>平成２８年１１月には、顧客満足度の更なる向上を目的に、ＩＳＯ９００１：２０１５の認証を取得し、品質管理強化を図っております。</p>
-						　
-						<p>鋼材専用の物流基地として、安全第一でより質の高いサービスを提供すべく努力していく所存でおりますので、今後とも、倍旧のご支援・ご愛顧を賜りますようお願い申し上げます。</p>
-						</p>
-					</div>
-				</div>
-				<div class="clearfix"></div>
+				<h2>役員一覧</h2>
+				<table class="profiles-table">
+					<tr>
+						<th>
+							<p>代表取締役</p>
+							<p>社　　　長</p>
+						</th>
+						<td>河本　隆明</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>
+							<p>代表取締役</p>
+							<p>常務取締役</p>
+						</th>
+						<td>鉄橋　彰</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>
+							常務取締役
+						</th>
+						<td>乃万　克也</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>
+							<p>取締役</p>
+						</th>
+						<td>土橋　賢治</td>
+						<td>（総務部長）</td>
+					</tr>
+					<tr>
+						<th>
+							<p>取締役</p>
+						</th>
+						<td>永井　竜一</td>
+						<td>（外社取締役）</td>
+					</tr>
+					<tr>
+						<th>
+							<p>取締役</p>
+						</th>
+						<td>樽宮　浩一</td>
+						<td>（非常勤取締役）</td>
+					</tr>
+					<tr>
+						<th>
+							<p>監査役</p>
+						</th>
+						<td>林　真生</td>
+						<td>（非常勤監査役）</td>
+					</tr>
+				</table>
 			</div>
 		</div>
+	
 
 	</div>
 	<div class="footer">
@@ -152,8 +179,8 @@
 						<h4>関する方針</h4>
 						<li><a href="policy.html">安全・品質・衛生・環境</a></li>
 						<li> <span class="label label-info">防災協定</span><a href="agreement-1.html">千葉県</a>・<a
-								href="agreement-2.html">市川県</a>
-						</li>
+							href="agreement-2.html">市川県</a>
+					</li>
 					</ul>
 				</div>
 				<div class="col-sm-4 col-md-4">
