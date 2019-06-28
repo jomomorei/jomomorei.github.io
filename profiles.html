@@ -59,7 +59,12 @@
 					<li><a href="contact.html">問い合わせ</a></li>
 				</ul>
 				<!-- script-nav -->
-
+				<script>
+					$("span.menu").click(function () {
+						$(".top-nav ul").slideToggle(500, function () {
+						});
+					});
+				</script>
 				<!-- //script-nav -->
 			</div>
 			<div class="clearfix"> </div>
@@ -86,28 +91,28 @@
 				</div>
 				<div class="container">
 					<div class="span12 hexagon_box">
-							<section class="outline-box">
-									<ul>
-										<li><a href="message.html">社長挨拶</a>
-										</li>
-										<li>
-											<a href="profiles.html" class="present">
-												会社概要
-											</a>
-										</li>
-										<li>
-										<a href="executive.html">役員一覧</a>
-										</li>
-									</ul>
-								</section>
-								<section class="outline-box">
-									<ul>
-										<li><a href="development.html">沿革</a>
-										</li>
-										<li><a href="organization.html">組織図</a>
-										</li>
-									</ul>
-								</section>
+						<section class="outline-box">
+							<ul>
+								<li><a href="message.html">社長挨拶</a>
+								</li>
+								<li>
+									<a href="profiles.html" class="present">
+										会社概要
+									</a>
+								</li>
+								<li>
+									<a href="executive.html">役員一覧</a>
+								</li>
+							</ul>
+						</section>
+						<section class="outline-box">
+							<ul>
+								<li><a href="development.html">沿革</a>
+								</li>
+								<li><a href="organization.html">組織図</a>
+								</li>
+							</ul>
+						</section>
 					</div>
 				</div>
 			</div>

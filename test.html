@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="js/jquery-1.11.1.min.js"></script>
+<title>无标题文档</title>
+	<style type="text/css">
+	.item_li{padding-left:10px; height:40px; line-height:40px; border:1px solid; margin-bottom:10px;}
+	.down { cursor:pointer;}
+	.up { cursor:pointer;}
+	</style>
+	<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			
+				$(".down").click(function(e){
+					
+					var parentsDiv = $(this).parents(".item_li");
+					var next = parentsDiv.next();
+					if(next.html()!=undefined){
+						//next.after(parentsDiv);
+						next.fadeOut("slow",function(){
+							$(this).after(parentsDiv);
+							}).fadeIn();
+						
+					}else{
+						alert("到底了！");
+					}
+					});
+				$(".up").click(function(e){
+						var parentsDiv = $(this).parents(".item_li");
+						var prev = parentsDiv.prev();
+						if(prev.html()!=undefined){
+							//prev.before(parentsDiv);
+							prev.fadeOut("slow",function(){
+								$(this).before(parentsDiv);
+								}).fadeIn();
+							}else{
+								alert("到达最顶部了");
+								}
+					});
+			});
+	</script>
+ </head>
+ <body>
+	<div class="item_li">
+	11111
+	<span class="down"  onclick="">下移</span>
+	<span class="up"  onclick="">上移</span>
+	
+	</div>
+ 
+	<div class="item_li">
+	22222
+	<span class="down"  onclick="">下移</span>
+	<span class="up"  onclick="">上移</span>
+	
+	</div>
+	<div class="item_li">
+	33333
+	<span class="down"  onclick="">下移</span>
+	<span class="up"  onclick="">上移</span>
+	
+	</div>
+	<div class="item_li">
+	44444
+	<span  class="down"  onclick="">下移</span>
+	<span class="up"  onclick="">上移</span>
+	
+	</div>
+ </body>
+</html>
