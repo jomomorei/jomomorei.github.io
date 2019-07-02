@@ -61,13 +61,11 @@
 			right: 0%;
 		}
 
-		.part1,
-		.part3 {
-			background: #fdda7a
+		.bg-odd {
+			background: #ffffff
 		}
 
-		.part2,
-		.part4 {
+		.bg-even {
 			background: rgb(243, 243, 237);
 		}
 
@@ -124,6 +122,11 @@
 		.btn-block button:hover {
 			color: burlywood
 		}
+		.hidden-box{
+			display: none;
+		}
+
+	
 	</style>
 </head>
 
@@ -160,12 +163,11 @@
 	<!--script-->
 	<script>
 		$(document).ready(function () {
-			$(".bt-down").hide();
-			$(".img-group img").eq(0).nextAll().hide();
 			$(".top-nav li a").click(function () {
 				$(this).parent().addClass("active");
 				$(this).parent().siblings().removeClass("active");
 			});
+			$(".bt-up").hide();	
 			$(".bt-up").click(function () {
 				$(this).parent().parent().parent().next().hide();
 				$(this).parent().next().hide();
@@ -192,236 +194,8 @@
 	<!-- /script-for sticky-nav -->
 	<!--//header-->
 
-	<div class="grid_eqt part2">
-		<div class="container">
-			<div class="about-grids service_box">
-
-				<div class="col-sm-12">
-					<h3 class="title"><span class="title-main splitline001">構内案内図</span><span
-							class="title-triangle bt-down">▼</span><span class="title-triangle bt-up">▲</span></h3>
-					<div class="list list-center">
-							<div>案内凡例：</div>
-						<ul>				
-							<li><img src="img/mark2-green.png"/ class="svg">&nbsp&nbsp&nbsp上屋倉庫</li>
-							<li><img src="img/mark2-red.png"/ class="svg">&nbsp&nbsp&nbsp上屋倉庫（防湿倉庫）</li>
-							<li><img src="img/mark2-orange.png"/ class="svg">&nbsp&nbsp&nbsp船舶荷役設備</li>
-						</ul>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="container">
-				<div class="col-sm-1"></div>
-				<div class="col-sm-10 about-grid">
-					<div class="mask"><img src="images/satellite-map_2p3.png" alt="image" class="img-responsive"
-							alt="" />
-					</div>
-				</div>
-				<div class="col-sm-1"></div>
-				<div class="clearfix"> </div>
-				<div class="container">
-					<h3 class="title-center">構内面積</h3>
-					<div class="col-md-1"></div>
-					<div class="col-md-5 about-grid">
-						<table class="table">
-							<tbody>
-								<tr>
-									<td>構内敷地面積</td>
-									<td>86,100㎡</td>
-								</tr>
-								<tr>
-									<td>保管設備</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>上屋倉庫（10棟）</td>
-									<td>42,771㎡</td>
-								</tr>
-								<tr>
-									<td>　〔内保税税蔵置場〕</td>
-									<td>9,681㎡</td>
-								</tr>
-								<tr>
-									<td>野積倉庫（１棟）</td>
-									<td>5,600㎡</td>
-								</tr>
-								<tr>
-									<td>　〔内保税税蔵置場〕</td>
-									<td>4,156㎡</td>
-								</tr>
-								<tr>
-									<td>野積場</td>
-									<td>7,679㎡</td>
-								</tr>
-							</tbody>
-							<tbody>
-								<tr>
-									<td>岸壁</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>有効長さ</td>
-									<td>295.4ｍ</td>
-								</tr>
-								<tr>
-									<td>幅</td>
-									<td>26.0ｍ</td>
-								</tr>
-								<tr>
-									<td>水深　満潮時</td>
-									<td>8.5ｍ</td>
-								</tr>
-								<tr>
-									<td>　　　干潮時</td>
-									<td>6.5ｍ</td>
-								</tr>
-							</tbody>
-
-						</table>
-					</div>
-					<div class="col-md-5 about-grid">
-						<table class="table">
-							<thead>
-								<tr>
-									<th>荷役設備</th>
-
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td rowspan="4">岸壁</td>
-									<td>ロープトロリー式橋型クレーン</td>
-									<td>9.4t</td>
-									<td>1基</td>
-								</tr>
-								<tr>
-									<td>水平引込式クレーン</td>
-									<td>10.0t</td>
-									<td>1基</td>
-								</tr>
-								<tr>
-									<td>水平引込式クレーン</td>
-									<td>20.0t</td>
-									<td>1基</td>
-								</tr>
-								<tr>
-									<td>水平引込式クレーン</td>
-									<td>32.2t</td>
-									<td>1基</td>
-								</tr>
-							</tbody>
-							<tbody>
-								<tr>
-									<td>野積場</td>
-									<td>トラッククレーン</td>
-									<td>35.0t</td>
-									<td>2台</td>
-								</tr>
-							</tbody>
-							<tbody>
-								<tr>
-									<td rowspan="8">上屋倉庫</td>
-									<td>天丼クレーン</td>
-									<td>30.0t</td>
-									<td>2基</td>
-								</tr>
-								<tr>
-									<td>天丼クレーン</td>
-									<td>21.8t</td>
-									<td>1基</td>
-								</tr>
-								<tr>
-									<td>天丼クレーン</td>
-									<td>20.0t</td>
-									<td>2基</td>
-								</tr>
-								<tr>
-									<td>天丼クレーン</td>
-									<td>15.0t</td>
-									<td>1基</td>
-								</tr>
-								<tr>
-									<td>天丼クレーン</td>
-									<td>11.0t</td>
-									<td>2基</td>
-								</tr>
-								<tr>
-									<td>天丼クレーン</td>
-									<td>10.0t</td>
-									<td>7基</td>
-								</tr>
-								<tr>
-									<td>天丼クレーン</td>
-									<td>9.8t</td>
-									<td>1基</td>
-								</tr>
-								<tr>
-									<td>天丼クレーン</td>
-									<td>9.3t</td>
-									<td>2基</td>
-								</tr>
-							</tbody>
-							<tbody>
-								<tr>
-									<td rowspan="2">野積倉庫</td>
-									<td>門型クレーン</td>
-									<td>30.0t</td>
-									<td>1基</td>
-								</tr>
-								<tr>
-									<td>門型クレーン</td>
-									<td>32.0t</td>
-									<td>1基</td>
-								</tr>
-							</tbody>
-							<tbody>
-								<tr>
-									<td></td>
-									<td>トラックスケール</td>
-									<td>40.0t</td>
-									<td>1台</td>
-								</tr>
-							</tbody>
-							<tbody>
-								<tr>
-									<td></td>
-									<td>構内横持トラック、トレーラー</td>
-									<td></td>
-									<td>21台</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<div class="grid_eqt part1">
-		<div class="container">
-			<div class="about-grids service_box">
-				<div class="col-sm-12">
-					<h3 class="title"><span class="title-main splitline002">構内平面図</span><span
-							class="title-triangle bt-down">▼</span><span class="title-triangle bt-up">▲</span>
-					</h3>
-					<p class=" length-60"></p>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="container">
-				<div class="col-sm-2"></div>
-				<div class="col-sm-8 about-grid">
-					<div><img src="images/heimenzu.gif" class="img-responsive" alt="" />
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-
-			</div>
-		</div>
-	</div>
-
-	<div class="grid_eqt part2">
+	
+	<div class="grid_eqt bg-odd">
 		<div class="container">
 			<div class="about-grids service_box">
 				<div class="col-sm-12">
@@ -433,7 +207,7 @@
 				<div class="clearfix"> </div>
 			</div>
 			<div class="container">
-				<div class="about-grids service_box">
+				<div class="about-grids service_box hidden-box">
 					<div class="col-sm-3 about-grid">
 						<a href="images/KOUNAI090.jpg" title="name" rel="title2" target="_blank">
 							<div class="view view-first">
@@ -488,7 +262,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="grid_eqt part3">
+	<div class="grid_eqt bg-even">
 		<div class="container">
 			<div class="about-grids service_box">
 				<div class="col-sm-12">
@@ -501,7 +275,7 @@
 				<div class="clearfix"> </div>
 			</div>
 			<div class="container">
-				<div class="about-grids service_box">
+				<div class="about-grids service_box hidden-box">
 					<div class="col-sm-5 about-grid">
 						<a href="images/KOUNAI130.jpg" title="name" rel="title2" target="_blank">
 							<div class="view view-first">
@@ -524,7 +298,7 @@
 		</div>
 	</div>
 
-	<div class="grid_eqt part4">
+	<div class="grid_eqt bg-odd">
 		<div class="container">
 			<div class="about-grids service_box">
 				<div class="col-sm-12">
@@ -536,7 +310,7 @@
 				<div class="clearfix"> </div>
 			</div>
 			<div class="container">
-				<div class="container service_box">
+				<div class="container service_box hidden-box">
 					<div class="col-sm-3"></div>
 					<div class="col-sm-6 about-grid">
 						<div class="mask"><img src="images/KOUNAI001.jpg" alt="image" class="img-responsive" alt="" />
@@ -547,7 +321,7 @@
 					<div class="col-sm-2"></div>
 					<div class="clearfix"> </div>
 				</div>
-				<div class="about-grids service_box">
+				<div class="about-grids service_box hidden-box">
 					<div class="col-sm-3 about-grid">
 						<a href="images/KOUNAI010.jpg" title="name" rel="title2" target="_blank">
 							<div class="view view-first">
@@ -589,7 +363,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="grid_eqt part1">
+	<div class="grid_eqt bg-even">
 		<div class="container">
 			<div class="about-grids service_box">
 				<div class="col-sm-12">
@@ -601,7 +375,7 @@
 				<div class="clearfix"> </div>
 			</div>
 			<div class="container">
-				<div class="container service_box">
+				<div class="container service_box hidden-box">
 					<div class="col-sm-1"></div>
 					<div class="col-sm-6 about-grid">
 						<div class="mask img-group"><img src="images/K1-0.jpg" alt="image" class="img-responsive"
