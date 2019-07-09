@@ -1066,12 +1066,16 @@ a:hover, a:focus {
 .page_top{
 	display: block;
 	position: fixed;
-	right:10px;
-  bottom: 55px;
+	right:30px;
+  bottom: 40%;
+  padding-top: 5px;
 	font-size: 0.9em;
-	border: 1px solid #302836;
-	background: #302836;
-
+	border: 1px solid #393941;
+	height: 35px;
+	width: 75px;
+	background: #393941;
+	text-align: center;
+	
 }
 .page_top p a{
 	color: #FFF;
