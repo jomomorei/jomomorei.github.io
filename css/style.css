@@ -53,22 +53,23 @@ body a{
 	display: inline-block;
 	background:#f1cd69;
     margin-bottom: 0;
-	padding: 0.5em 3em 1.7em;
+	padding: 1.7em 3em 0.5em;
 }
 span.secondary {
-  margin-left: 4px;
-  text-transform: uppercase;
+  margin-right: 0px;
   letter-spacing: 10px;
   color: #ffffff;
   display: block;
-  margin-bottom: 7px;
+  text-align: right;
+ 
 }
 span.main {
   color: #302836;
   display: block;
-  text-transform: uppercase;
   font-size: 2.5em;
   line-height: 30px;
+  margin-bottom: 7px;
+ 
 }
 .top-nav{
 	float: right;
@@ -1089,7 +1090,7 @@ a:hover, a:focus {
 	padding-top:10em;
 }
 .logo {
-	padding: 0.5em 1em 1.7em;
+	padding: 1.7em 1em 0.5em;
 }
 .top-nav {
 	margin: 2.3em 1em 0 0;
@@ -1278,7 +1279,7 @@ span.main {
   line-height: 20px;
 }
 span.secondary {
-	margin-left: 4px;
+	margin-right: 0px;
 }
 .top-nav {
 	margin: 1em 1em 0 0;
@@ -1569,7 +1570,7 @@ span.secondary {
   font-size: 0.85em;
 }
 .logo {
-	padding: 0.5em 1em 1em;
+	padding:  1em 1em 0.5em;
 }
 .top-nav {
 	margin: 0.6em 1em 0 0;
