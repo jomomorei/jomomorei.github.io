@@ -94,7 +94,7 @@ span.main {
   -ms-transition: 0.5s all;
   -moz-transition: 0.5s all;
 	padding: 36px 21px 35px 21px;
-	margin: -3px;
+	margin: 0px;
 }
 .copyrights{
 	text-indent:-9999px;
