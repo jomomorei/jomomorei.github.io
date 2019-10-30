@@ -1950,4 +1950,8 @@ label.btn1.btn2.btn-8.btn-8c {
 .message-fild textarea {
   margin-bottom: 1em;
 }
+	.outline-box a{
+	border: 1px solid #000;
+	padding: 15px 10px;
+}
 }
