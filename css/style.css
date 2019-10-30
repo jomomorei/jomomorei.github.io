@@ -1692,6 +1692,10 @@ label.btn1.btn2.btn-8.btn-8c {
 .table-block{
 	width: 100%;
 }
+	.outline-box a{
+	border: 1px solid #00ff00;
+	padding: 15px 10px;
+}
 }
 @media (max-width:320px){
 .header {
