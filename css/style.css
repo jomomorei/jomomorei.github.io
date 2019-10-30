@@ -6,6 +6,7 @@ html, body{
    font-size: 100%;
 	 background:#fff; 
 	 font-weight: 100;
+	 font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 body a{
 	transition:0.5s all;
