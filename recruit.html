@@ -9,6 +9,7 @@
 		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/common.js"></script>
 	<link href="css/style.css" rel='stylesheet' type='text/css' />
 	<link href="https://fonts.googleapis.com/css?family=Kosugi|Noto+Sans+JP|Roboto|Sawarabi+Gothic&display=swap"
 		rel="stylesheet">
@@ -23,15 +24,15 @@
 		}
 
 		/* Padding and font style */
-		.table td
-		{
+		.table td {
 			line-height: 50px;
 			height: 70px;
-			vertical-align:middle
+			vertical-align: middle
 		}
+
 		.table td,
 		.table th {
-			vertical-align:middle;
+			vertical-align: middle;
 			min-width: 150px;
 			font-size: 1.0em;
 			color: #443e49;
@@ -96,9 +97,7 @@
 			text-align: center;
 			margin-right: 10px;
 		}
-
-	
-
+		
 		.request {
 			border: 1px solid rgb(207, 207, 207);
 			margin: 30px 0;
@@ -109,47 +108,11 @@
 </head>
 
 <body>
-	<div class="header-home">
-		<div class="fixed-header">
-			<div class="logo">
-				<a href="index.html">
-						<span class="main">京葉鐵鋼埠頭</span>
-						<span class="secondary">株式会社</span>
-				</a>
-			</div>
-			<div class="top-nav">
-				<span class="menu"> </span>
-				<ul>
-					<li><a href="company.html">企業情報</a></li>
-					<li><a href="premises.html">構内案内</a></li>
-					<li class="active"><a href="recruit.html">採用情報</a></li>
-					<li><a href="access.html">アクセス</a></li>
-					<li><a href="contact.html">問い合わせ</a></li>
-				</ul>
-				<!-- script-nav -->
-				<script>
-					$("span.menu").click(function () {
-						$(".top-nav ul").slideToggle(500, function () {
-						});
-					});
-				</script>
-				<!-- //script-nav -->
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<!--script-->
+	<div id="header"></div>
 	<script>
-		$(document).ready(function () {
-			$(".top-nav li a").click(function () {
-				$(this).parent().addClass("active");
-				$(this).parent().siblings().removeClass("active");
-			});
-		});
+		$("#header").load("header.html");	
 	</script>
 
-	<!-- /script-for sticky-nav -->
-	<!--//header-->
 	<div class="grid_1">
 		<div class="recruit-title">
 			<h3>募集要項</h3>
@@ -181,72 +144,72 @@
 
 		<div class="container">
 
-				<h3 class="title">平成31年度入社募集要項</h3>
-				<table class="table">
-					<tbody>
-						<tr>
-							<th> 募集対象</th>
-							<td>平成31年3月 高等学校を卒業見込みの方</td>
-						</tr>
-						<tr>
-							<th> 採用数</th>
-							<td>5名</td>
-						</tr>
-						<tr>
-							<th>勤務地</th>
-							<td>本社</td>
-						</tr>
-						<tr>
-							<th>給与</th>
-							<td>基本給　165,000円</td>
-						</tr>
-						<tr>
-							<th>勤務地</th>
-							<td>本社</td>
-						</tr>
-						<tr>
-							<th>昇給</th>
-							<td>年1回（4月）</td>
-						</tr>
-						<tr>
-							<th>賞与</th>
-							<td>年2回（6月・12月）</td>
-						</tr>
-						<tr>
-							<th>諸手当</th>
-							<td>皆勤手当　家族手当　時間外勤務手当　通勤手当　住宅手当　食事手当他</td>
-						</tr>
-						<tr>
-							<th>就業時間</th>
-							<td>（平日）8:30～16:45　（土曜日）8:30～12:00</td>
-						</tr>
-						<tr>
-							<th>休日休暇</th>
-							<td>土曜日（交替制　月2回）　日曜日　祝祭日　創立記念日　年末年始　
-								年次有給休暇（16～20日　※半日有給制度有）　その他（結婚　忌引　夏季　育児　介護他）</td>
-						</tr>
-						<tr>
-							<th>福利厚生</th>
-							<td><span style="color:brown; font-weight: bold">制度　：</span>　各種社会保険　慶弔金　持株制度</br>
-								&emsp;&emsp;&emsp;&emsp;&emsp;永年勤続表彰　改善提案表彰　資格取得制度（クレーン運転士・大型運転免許等）　退職金制度</br>
-								<span
-									style="color:brown; font-weight: bold">施設　：</span>　家族寮（10,000円／月）　独身寮（4,000円／月）　社員食堂　<span
-									class="label label-success">※平成30年7月現在</span>
-							</td>
-						</tr>
-						<tr>
-							<th>応募方法</th>
-							<td>学校推薦（自由応募は受け付けていません）</td>
-						</tr>
-						<tr>
-							<th>選考方法</th>
-							<td><span style="color:brown; font-weight: bold">筆記　：</span>　一般常識　作文　　</br><span
-									style="color:brown; font-weight: bold">面接　：</span>　個人面接</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+			<h3 class="title">平成31年度入社募集要項</h3>
+			<table class="table">
+				<tbody>
+					<tr>
+						<th> 募集対象</th>
+						<td>平成31年3月 高等学校を卒業見込みの方</td>
+					</tr>
+					<tr>
+						<th> 採用数</th>
+						<td>5名</td>
+					</tr>
+					<tr>
+						<th>勤務地</th>
+						<td>本社</td>
+					</tr>
+					<tr>
+						<th>給与</th>
+						<td>基本給　165,000円</td>
+					</tr>
+					<tr>
+						<th>勤務地</th>
+						<td>本社</td>
+					</tr>
+					<tr>
+						<th>昇給</th>
+						<td>年1回（4月）</td>
+					</tr>
+					<tr>
+						<th>賞与</th>
+						<td>年2回（6月・12月）</td>
+					</tr>
+					<tr>
+						<th>諸手当</th>
+						<td>皆勤手当　家族手当　時間外勤務手当　通勤手当　住宅手当　食事手当他</td>
+					</tr>
+					<tr>
+						<th>就業時間</th>
+						<td>（平日）8:30～16:45　（土曜日）8:30～12:00</td>
+					</tr>
+					<tr>
+						<th>休日休暇</th>
+						<td>土曜日（交替制　月2回）　日曜日　祝祭日　創立記念日　年末年始　
+							年次有給休暇（16～20日　※半日有給制度有）　その他（結婚　忌引　夏季　育児　介護他）</td>
+					</tr>
+					<tr>
+						<th>福利厚生</th>
+						<td><span style="color:brown; font-weight: bold">制度　：</span>　各種社会保険　慶弔金　持株制度</br>
+							&emsp;&emsp;&emsp;&emsp;&emsp;永年勤続表彰　改善提案表彰　資格取得制度（クレーン運転士・大型運転免許等）　退職金制度</br>
+							<span
+								style="color:brown; font-weight: bold">施設　：</span>　家族寮（10,000円／月）　独身寮（4,000円／月）　社員食堂　<span
+								class="label label-success">※平成30年7月現在</span>
+						</td>
+					</tr>
+					<tr>
+						<th>応募方法</th>
+						<td>学校推薦（自由応募は受け付けていません）</td>
+					</tr>
+					<tr>
+						<th>選考方法</th>
+						<td><span style="color:brown; font-weight: bold">筆記　：</span>　一般常識　作文　　</br><span
+								style="color:brown; font-weight: bold">面接　：</span>　個人面接</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
+	</div>
 	</div>
 	</div>
 	<div class="footer">
