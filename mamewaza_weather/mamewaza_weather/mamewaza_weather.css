@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "weather";
+  src: url('./mamewaza_weather.eot?150714');
+  src: url('./mamewaza_weather.eot?150714#iefix') format('embedded-opentype'),
+       url('./mamewaza_weather.woff?150714') format('woff'),
+       url('./mamewaza_weather.ttf?150714') format('truetype'),
+       url('./mamewaza_weather.svg?150714#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Bold");
+  font-weight: bold;
+}
+
+table.mamewaza_weather {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	font-size: 100%;
+	text-align: center;
+	font-family: "Yu Gothic", YuGothic, "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+div.mamewaza_weather_exp {
+	font-family: "Yu Gothic", YuGothic, "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+	text-align: left;
+}
+
+span.mamewaza_weather_icon {
+	display: inline-block;
+	margin: 0 5px;
+	line-height: 100%;
+	vertical-align: middle;
+	font-family: "weather" !important;
+}
+
+span.mamewaza_weather_small {
+	display: inline-block;
+	margin-left: 5px;
+	font-size: 80%;
+	opacity: 0.8;
+	-ms-filter: "alpha(opacity=80)";
+	vertical-align: middle;
+}
+
+span.memewaza_asscembled {
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+@media only screen and (max-width: 1020px) and (min-width: 768px) {
+	div.mamewaza_weather {
+		max-width: 100% !important;
+	}
+		div.mamewaza_weather > div {
+			max-width: 100% !important;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+}
+
+@media only screen and (max-width: 767px) {
+	div.mamewaza_weather {
+		width: 100% !important;
+	}
+		div.mamewaza_weather > div {
+			width: 100% !important;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			overflow: auto;
+			white-space: nowrap;
+		}
+
+		div.mamewaza_weather_exp {
+			white-space: normal;
+		}
+}
+div.mamewaza_weather > div {
+	background-color:#fca135;
+}
+div.mamewaza_weather th,div.mamewaza_weather td,div.mamewaza_weather div.mamewaza_weather_exp {
+	padding:10px;
+}
+div.mamewaza_weather > div {
+	padding:10px;
+	font-size:14px;
+}
+div.mamewaza_weather th,div.mamewaza_weather td {
+	border:none;
+	border-bottom:1px dashed #eeeeee;
+}
+div.mamewaza_weather,div.mamewaza_weather a {
+	color:#000;
+}
+div.mamewaza_weather span.mamewaza_weather_icon {
+	color:rgba(255,255,255,0.5);
+	font-size:36px;
+	text-shadow:none;
+}
+div.mamewaza_weather div.mamewaza_weather_exp,div.mamewaza_weather div.mamewaza_weather_exp a {
+	color:#000000;
+	font-size:12px;
+}
+div.mamewaza_weather td.mamewaza_weather_sat,div.mamewaza_weather td.mamewaza_weather_sat span.mamewaza_weather_icon {
+	color:#00f;
+}
+div.mamewaza_weather td.mamewaza_weather_sun,div.mamewaza_weather td.mamewaza_weather_sun span.mamewaza_weather_icon {
+	color:#f00;
+}
